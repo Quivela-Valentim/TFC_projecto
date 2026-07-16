@@ -70,11 +70,15 @@
     @apply block text-xs font-medium text-marfim-300 mb-1.5;
   }
 
+  .mensagem {
+    @apply bg-base-950 text-white font-medium;
+  }
+
   .badge-ativo {
-    @apply inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-[6px] bg-sucesso-bg text-sucesso;
+    @apply inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-[6px] mensagem;
   }
 
   .badge-bloqueado {
-    @apply inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-[6px] bg-perigo-bg text-perigo;
+    @apply inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-[6px] mensagem;
   }
 }

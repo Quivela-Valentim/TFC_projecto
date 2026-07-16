@@ -26,7 +26,7 @@ export default function RecuperarPasswordPage() {
   return (
     <AuthLayout titulo="Recuperar palavra-passe" subtitulo="Introduza o email associado à sua conta.">
       {enviado ? (
-        <div className="text-sm bg-sucesso-bg text-sucesso rounded-[6px] px-3.5 py-3">
+        <div className="text-sm mensagem rounded-[6px] px-3.5 py-3">
           Se o email estiver registado, enviámos uma ligação de recuperação. Verifique a sua caixa de entrada.
         </div>
       ) : (
@@ -35,7 +35,7 @@ export default function RecuperarPasswordPage() {
             <label className="rotulo">Email</label>
             <input type="email" className="campo" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
-          {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-3.5 py-2.5">{erro}</div>}
+          {erro && <div className="text-sm mensagem rounded-[6px] px-3.5 py-2.5">{erro}</div>}
           <button type="submit" className="btn-primario w-full" disabled={aEnviar}>
             {aEnviar ? "A enviar..." : "Enviar ligação de recuperação"}
           </button>

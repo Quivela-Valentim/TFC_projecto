@@ -34,7 +34,7 @@ export default function RedefinirPasswordPage() {
   if (sucesso) {
     return (
       <AuthLayout titulo="Palavra-passe redefinida">
-        <div className="text-sm bg-sucesso-bg text-sucesso rounded-[6px] px-3.5 py-3">
+        <div className="text-sm mensagem rounded-[6px] px-3.5 py-3">
           A sua palavra-passe foi actualizada. A redireccionar para o login...
         </div>
       </AuthLayout>
@@ -53,7 +53,7 @@ export default function RedefinirPasswordPage() {
           <input type="password" className="campo" value={confirmar} onChange={(e) => setConfirmar(e.target.value)} required />
         </div>
         <p className="text-xs text-marfim-400">Mínimo 8 caracteres, com letras e números.</p>
-        {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-3.5 py-2.5">{erro}</div>}
+        {erro && <div className="text-sm mensagem rounded-[6px] px-3.5 py-2.5">{erro}</div>}
         <button type="submit" className="btn-primario w-full" disabled={aEnviar}>
           {aEnviar ? "A guardar..." : "Redefinir palavra-passe"}
         </button>

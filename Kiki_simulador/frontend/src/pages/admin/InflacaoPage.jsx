@@ -46,7 +46,7 @@ export default function InflacaoPage() {
       <CabecalhoPagina titulo="Taxa de Inflação" subtitulo="IPC mensal de Angola, usado no cálculo da rentabilidade real (RN008)." />
 
       <div className="p-4 sm:p-8 space-y-6">
-        {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-4 py-3">{erro}</div>}
+        {erro && <div className="text-sm mensagem rounded-[6px] px-4 py-3">{erro}</div>}
 
         <form onSubmit={submeter} className="painel p-5 flex items-end gap-3 flex-wrap">
           <div>

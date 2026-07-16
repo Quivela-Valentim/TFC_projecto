@@ -55,7 +55,7 @@ export default function LoginPage() {
         </div>
 
         {erro && (
-          <div className={`text-sm rounded-[6px] px-3.5 py-2.5 ${bloqueado ? "bg-aviso-bg text-aviso" : "bg-perigo-bg text-perigo"}`}>
+          <div className={`text-sm rounded-[6px] px-3.5 py-2.5 ${bloqueado ? "mensagem" : "mensagem"}`}>
             {erro}
           </div>
         )}

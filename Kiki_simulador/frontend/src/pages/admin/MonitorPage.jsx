@@ -50,7 +50,7 @@ export default function MonitorPage() {
         </div>
 
         {dados.ativos_com_dados_em_falta > 0 && (
-          <div className="text-sm bg-aviso-bg text-aviso rounded-[6px] px-4 py-3">
+          <div className="text-sm mensagem rounded-[6px] px-4 py-3">
             Existem ativos sem preços históricos recentes (últimos 45 dias). Isto pode impedir simulações em
             períodos próximos da data atual — considere atualizar os dados em "Dados Financeiros".
           </div>

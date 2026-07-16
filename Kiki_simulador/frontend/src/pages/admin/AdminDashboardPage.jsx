@@ -12,7 +12,7 @@ export default function AdminDashboardPage() {
     dashboardApi.admin().then(setDados).catch((e) => setErro(e.message));
   }, []);
 
-  if (erro) return <div className="p-4 sm:p-8 text-sm bg-perigo-bg text-perigo rounded-[6px]">{erro}</div>;
+  if (erro) return <div className="p-4 sm:p-8 text-sm mensagem rounded-[6px]">{erro}</div>;
   if (!dados) return <div className="h-64 flex items-center justify-center"><div className="w-6 h-6 border-2 border-vivo-500 border-t-transparent rounded-full animate-spin" /></div>;
 
   return (
@@ -28,7 +28,7 @@ export default function AdminDashboardPage() {
         </div>
 
         {dados.tentativas_login_falhadas_recentes > 0 && (
-          <div className="text-sm bg-aviso-bg text-aviso rounded-[6px] px-4 py-3">
+          <div className="text-sm mensagem rounded-[6px] px-4 py-3">
             {dados.tentativas_login_falhadas_recentes} tentativa(s) de login falhada(s) nas últimas 24 horas.
           </div>
         )}
