@@ -80,8 +80,8 @@ export default function PerfilPage() {
             </div>
           </div>
 
-          {mensagem && <div className="text-sm bg-sucesso-bg text-sucesso rounded-xl px-3.5 py-2.5">{mensagem}</div>}
-          {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-3.5 py-2.5">{erro}</div>}
+          {mensagem && <div className="text-sm bg-sucesso-bg text-sucesso rounded-[6px] px-3.5 py-2.5">{mensagem}</div>}
+          {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-3.5 py-2.5">{erro}</div>}
 
           <button type="submit" className="btn-primario" disabled={aGuardar}>
             {aGuardar ? "A guardar..." : "Guardar alterações"}

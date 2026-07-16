@@ -70,7 +70,7 @@ export default function ModalAdicionarAtivo({ aberto, onFechar, onAdicionado }) 
             </div>
           </div>
 
-          {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-3.5 py-2.5">{erro}</div>}
+          {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-3.5 py-2.5">{erro}</div>}
 
           <div className="flex justify-end gap-3 pt-2">
             <button type="button" className="btn-secundario" onClick={onFechar} disabled={aEnviar}>

@@ -46,7 +46,7 @@ export default function MercadoPage() {
             <button
               key={t.valor}
               onClick={() => setTipo(t.valor)}
-              className={`text-xs font-medium px-3.5 py-2 rounded-xl transition ${
+              className={`text-xs font-medium px-3.5 py-2 rounded-[6px] transition ${
                 tipo === t.valor ? "bg-vivo-500 text-white" : "bg-base-800 text-marfim-300 hover:bg-base-700"
               }`}
             >

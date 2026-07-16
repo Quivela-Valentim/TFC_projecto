@@ -75,7 +75,7 @@ export default function FormSimulacao({ onSimular, aProcessar }) {
         </div>
       </div>
 
-      {erroLocal && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-3.5 py-2.5">{erroLocal}</div>}
+      {erroLocal && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-3.5 py-2.5">{erroLocal}</div>}
 
       <button type="submit" className="btn-primario w-full" disabled={aProcessar}>
         {aProcessar ? "A calcular..." : "Simular"}

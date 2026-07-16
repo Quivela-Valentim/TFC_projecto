@@ -1,4 +1,5 @@
 // components/shared/Sidebar.jsx
+import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../store/AuthContext";
 
@@ -19,6 +20,8 @@ const ICONES = {
   monitor: "M3 3v18h18M7 15l4-6 3 4 5-8",
   perfil: "M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z",
   sair: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9",
+  menu: "M4 6h16M4 12h16M4 18h16",
+  fechar: "M18 6 6 18M6 6l12 12",
 };
 
 const NAV_INVESTIDOR = [
@@ -40,6 +43,7 @@ const NAV_ADMIN = [
 export default function Sidebar() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const [aberta, setAberta] = useState(false);
   const isAdmin = user?.is_administrador;
   const nav = isAdmin ? NAV_ADMIN : NAV_INVESTIDOR;
 
@@ -48,25 +52,29 @@ export default function Sidebar() {
     navigate("/login");
   };
 
-  return (
-    <aside className="w-60 flex-shrink-0 bg-base-850 border-r border-white/5 flex flex-col min-h-screen">
-      <div className="px-5 py-5 border-b border-white/5">
+  const conteudoNav = (
+    <>
+      <div className="px-5 py-5 border-b border-white/5 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-vivo-500 rounded-lg flex items-center justify-center text-white text-sm font-display font-bold">K</div>
+          <div className="w-8 h-8 bg-vivo-500 rounded-[6px] flex items-center justify-center text-white text-sm font-display font-bold flex-shrink-0">K</div>
           <div>
             <p className="font-display font-semibold text-marfim-50 text-sm leading-none">Kiki Sim</p>
             <p className="text-[11px] text-marfim-400 mt-1">{isAdmin ? "Painel Administrador" : "Simulador de Investimento"}</p>
           </div>
         </div>
+        <button onClick={() => setAberta(false)} className="md:hidden text-marfim-300 hover:text-marfim-50 p-1">
+          <Icon path={ICONES.fechar} />
+        </button>
       </div>
 
-      <nav className="flex-1 px-3 py-4 space-y-1">
+      <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
         {nav.map(({ path, label, icone }) => (
           <NavLink
             key={path}
             to={path}
+            onClick={() => setAberta(false)}
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-base font-medium transition ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-[6px] text-base font-medium transition ${
                 isActive ? "bg-vivo-500/15 text-vivo-400" : "text-marfim-300 hover:text-marfim-50 hover:bg-white/5"
               }`
             }
@@ -80,8 +88,9 @@ export default function Sidebar() {
       <div className="px-3 py-4 border-t border-white/5">
         <NavLink
           to="/perfil"
+          onClick={() => setAberta(false)}
           className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 mb-1 rounded-xl transition ${isActive ? "bg-white/5" : "hover:bg-white/5"}`
+            `flex items-center gap-3 px-3 py-2 mb-1 rounded-[6px] transition ${isActive ? "bg-white/5" : "hover:bg-white/5"}`
           }
         >
           <div className="w-7 h-7 rounded-full bg-base-600 flex items-center justify-center text-xs font-semibold text-marfim-100 flex-shrink-0">
@@ -94,11 +103,40 @@ export default function Sidebar() {
         </NavLink>
         <button
           onClick={sair}
-          className="w-full flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-marfim-300 hover:text-marfim-50 hover:bg-white/5 transition"
+          className="w-full flex items-center gap-3 px-3 py-2 rounded-[6px] text-sm text-marfim-300 hover:text-marfim-50 hover:bg-white/5 transition"
         >
           <Icon path={ICONES.sair} /> Sair
         </button>
       </div>
-    </aside>
+    </>
+  );
+
+  return (
+    <>
+      {/* Barra fixa no topo, só em telemóvel/tablet pequeno */}
+      <div className="md:hidden fixed top-0 left-0 right-0 h-14 bg-base-850 border-b border-white/5 flex items-center justify-between px-4 z-30">
+        <div className="flex items-center gap-2.5">
+          <div className="w-7 h-7 bg-vivo-500 rounded-[6px] flex items-center justify-center text-white text-xs font-display font-bold">K</div>
+          <p className="font-display font-semibold text-marfim-50 text-sm">Kiki Sim</p>
+        </div>
+        <button onClick={() => setAberta(true)} className="text-marfim-200 hover:text-marfim-50 p-1.5">
+          <Icon path={ICONES.menu} className="w-6 h-6" />
+        </button>
+      </div>
+
+      {/* Fundo escurecido atrás do painel deslizante, só quando aberto em telemóvel */}
+      {aberta && (
+        <div className="md:hidden fixed inset-0 bg-black/60 z-40" onClick={() => setAberta(false)} />
+      )}
+
+      {/* Painel de navegação: deslizante em telemóvel, fixo e sempre visível a partir do tablet (md) */}
+      <aside
+        className={`fixed md:static top-0 left-0 h-full md:h-auto w-64 md:w-60 flex-shrink-0 bg-base-850 border-r border-white/5
+                    flex flex-col md:min-h-screen z-50 transition-transform duration-200
+                    ${aberta ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
+      >
+        {conteudoNav}
+      </aside>
+    </>
   );
 }

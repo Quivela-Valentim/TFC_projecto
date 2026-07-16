@@ -68,7 +68,7 @@ export default function AtivosPage() {
       />
 
       <div className="p-4 sm:p-8 space-y-6">
-        {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3">{erro}</div>}
+        {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-4 py-3">{erro}</div>}
 
         {mostrarForm && (
           <form onSubmit={criarAtivo} className="painel p-5 grid grid-cols-2 sm:grid-cols-5 gap-3 items-end">

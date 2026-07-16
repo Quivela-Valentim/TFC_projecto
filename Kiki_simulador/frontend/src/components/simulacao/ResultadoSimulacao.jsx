@@ -42,7 +42,7 @@ export default function ResultadoSimulacao({ resultado }) {
         </div>
       </div>
 
-      {erroExportar && <div className="text-xs bg-perigo-bg text-perigo rounded-xl px-3 py-2">{erroExportar}</div>}
+      {erroExportar && <div className="text-xs bg-perigo-bg text-perigo rounded-[6px] px-3 py-2">{erroExportar}</div>}
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
         <div>

@@ -53,7 +53,7 @@ export default function SimulacaoPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           <FormSimulacao onSimular={simular} aProcessar={aProcessar} />
           <div>
-            {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-3.5 py-2.5 mb-4">{erro}</div>}
+            {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-3.5 py-2.5 mb-4">{erro}</div>}
             {resultado ? (
               <ResultadoSimulacao resultado={resultado} />
             ) : (

@@ -42,7 +42,7 @@ export default function OnboardingPage() {
           <textarea className="campo resize-none" rows={3} value={descricao} onChange={(e) => setDescricao(e.target.value)} placeholder="Objetivo desta carteira..." />
         </div>
 
-        {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-3.5 py-2.5">{erro}</div>}
+        {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-3.5 py-2.5">{erro}</div>}
 
         <button type="submit" className="btn-primario w-full" disabled={aEnviar}>
           {aEnviar ? "A criar..." : "Criar carteira"}

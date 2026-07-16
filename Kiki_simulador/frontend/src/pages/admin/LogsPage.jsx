@@ -57,7 +57,7 @@ export default function LogsPage() {
       />
 
       <div className="p-4 sm:p-8 space-y-6">
-        {erroExportar && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3">{erroExportar}</div>}
+        {erroExportar && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-4 py-3">{erroExportar}</div>}
 
         <div className="painel p-5 flex items-end gap-3 flex-wrap">
           <div>

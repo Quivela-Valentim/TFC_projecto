@@ -19,7 +19,7 @@ export default function DashboardPage() {
   if (erro) {
     return (
       <div className="px-8 py-6">
-        <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3">{erro}</div>
+        <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-4 py-3">{erro}</div>
       </div>
     );
   }
@@ -56,7 +56,7 @@ export default function DashboardPage() {
         </div>
 
         {dados.posicoes_sem_inflacao_suficiente?.length > 0 && (
-          <div className="text-xs bg-aviso-bg text-aviso rounded-xl px-4 py-3">
+          <div className="text-xs bg-aviso-bg text-aviso rounded-[6px] px-4 py-3">
             A rentabilidade real geral não inclui {dados.posicoes_sem_inflacao_suficiente.join(", ")} por
             faltarem dados de inflação para o respetivo período. Peça ao administrador para completar o histórico.
           </div>

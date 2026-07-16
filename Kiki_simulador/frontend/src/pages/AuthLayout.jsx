@@ -11,7 +11,7 @@ export default function AuthLayout({ titulo, subtitulo, children, largura = "max
 
       <div className={`w-full ${largura} relative`}>
         <Link to="/" className="flex items-center gap-2.5 justify-center mb-8 hover:opacity-80 transition">
-          <div className="w-9 h-9 bg-vivo-500 rounded-lg flex items-center justify-center text-white font-display font-bold">K</div>
+          <div className="w-9 h-9 bg-vivo-500 rounded-[6px] flex items-center justify-center text-white font-display font-bold">K</div>
           <span className="font-display font-semibold text-marfim-50 text-lg">Kiki Simulador</span>
         </Link>
         <div className="painel p-8">

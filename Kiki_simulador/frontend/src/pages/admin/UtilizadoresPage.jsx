@@ -60,7 +60,7 @@ export default function UtilizadoresPage() {
       />
 
      <div className="p-4 sm:p-8">
-        {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3 mb-4">{erro}</div>}
+        {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-[6px] px-4 py-3 mb-4">{erro}</div>}
 
         <div className="painel overflow-x-auto">
           <table className="w-full text-sm">
