@@ -20,7 +20,7 @@ export default function MonitorPage() {
     <div>
       <CabecalhoPagina titulo="Monitorização do Sistema" subtitulo="Indicadores de funcionamento, atualizados automaticamente." />
 
-      <div className="p-8 space-y-6">
+      <div className="p-4 sm:p-8 space-y-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="painel p-5 flex items-center justify-between">
             <div>

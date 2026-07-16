@@ -45,7 +45,7 @@ export default function InflacaoPage() {
     <div>
       <CabecalhoPagina titulo="Taxa de Inflação" subtitulo="IPC mensal de Angola, usado no cálculo da rentabilidade real (RN008)." />
 
-      <div className="p-8 space-y-6">
+      <div className="p-4 sm:p-8 space-y-6">
         {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3">{erro}</div>}
 
         <form onSubmit={submeter} className="painel p-5 flex items-end gap-3 flex-wrap">
@@ -70,7 +70,7 @@ export default function InflacaoPage() {
           <button type="submit" className="btn-primario">Inserir</button>
         </form>
 
-        <div className="painel overflow-hidden">
+        <div className="painel overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-white/5 text-left text-xs text-marfim-400 uppercase tracking-wide">

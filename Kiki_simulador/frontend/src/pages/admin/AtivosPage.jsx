@@ -67,7 +67,7 @@ export default function AtivosPage() {
         acoes={<button className="btn-primario text-sm" onClick={() => setMostrarForm((v) => !v)}>+ Novo ativo</button>}
       />
 
-      <div className="p-8 space-y-6">
+      <div className="p-4 sm:p-8 space-y-6">
         {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3">{erro}</div>}
 
         {mostrarForm && (
@@ -95,7 +95,7 @@ export default function AtivosPage() {
         )}
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="painel overflow-hidden lg:col-span-1">
+          <div className="painel overflow-x-auto lg:col-span-1">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-white/5 text-left text-xs text-marfim-400 uppercase tracking-wide">
@@ -110,7 +110,7 @@ export default function AtivosPage() {
                       <p className="font-medium text-marfim-50">{a.ticker}</p>
                       <p className="text-xs text-marfim-400 truncate max-w-[140px]">{a.nome}</p>
                     </td>
-                    <td className="px-4 py-3 text-right numero text-marfim-200">{formatarAOA(a.preco_ultimo)}</td>
+                    <td className="px-4 py-3 text-right numero-mercado text-marfim-200">{formatarAOA(a.preco_ultimo)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -136,7 +136,7 @@ export default function AtivosPage() {
                   <button type="submit" className="btn-primario">Inserir preço — {selecionado.ticker}</button>
                 </form>
 
-                <div className="painel overflow-hidden max-h-[420px] overflow-y-auto">
+                <div className="painel overflow-x-auto max-h-[420px] overflow-y-auto">
                   <table className="w-full text-sm">
                     <thead className="sticky top-0 bg-base-800">
                       <tr className="border-b border-white/5 text-left text-xs text-marfim-400 uppercase tracking-wide">
@@ -149,7 +149,7 @@ export default function AtivosPage() {
                       {precos.map((p) => (
                         <tr key={p.id} className="border-b border-white/5 last:border-0">
                           <td className="px-4 py-2.5 text-marfim-200">{formatarData(p.data)}</td>
-                          <td className="px-4 py-2.5 text-right numero text-marfim-200">{formatarAOA(p.preco_fecho)}</td>
+                          <td className="px-4 py-2.5 text-right numero-mercado text-marfim-200">{formatarAOA(p.preco_fecho)}</td>
                           <td className="px-4 py-2.5 text-right text-xs text-marfim-400">{p.fonte}</td>
                         </tr>
                       ))}

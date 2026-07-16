@@ -45,9 +45,9 @@ export default function PerfilPage() {
     <div>
       <CabecalhoPagina titulo="O meu perfil" subtitulo="Consulte e edite os seus dados pessoais." />
 
-      <div className="p-8 max-w-lg">
+      <div className="p-4 sm:p-8 max-w-lg">
         <form onSubmit={submeter} className="painel p-6 space-y-4">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="rotulo">Nome</label>
               <input className="campo" value={form.first_name} onChange={atualizar("first_name")} />
@@ -68,7 +68,7 @@ export default function PerfilPage() {
 
           <div className="border-t border-white/5 pt-4">
             <p className="text-xs font-medium text-marfim-300 mb-3">Alterar palavra-passe (opcional)</p>
-            <div className="grid grid-cols-2 gap-4">
+           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="rotulo">Palavra-passe atual</label>
                 <input type="password" className="campo" value={form.password_atual} onChange={atualizar("password_atual")} />

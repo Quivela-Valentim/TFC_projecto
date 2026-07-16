@@ -49,7 +49,7 @@ export default function SimulacaoPage() {
     <div>
       <CabecalhoPagina titulo="Simulação de Investimento" subtitulo="Defina um montante e um período histórico para calcular a rentabilidade nominal e real." />
 
-      <div className="p-8 space-y-8">
+      <div className="p-4 sm:p-8 space-y-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           <FormSimulacao onSimular={simular} aProcessar={aProcessar} />
           <div>

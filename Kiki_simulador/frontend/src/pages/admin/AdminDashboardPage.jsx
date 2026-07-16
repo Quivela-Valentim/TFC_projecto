@@ -12,14 +12,14 @@ export default function AdminDashboardPage() {
     dashboardApi.admin().then(setDados).catch((e) => setErro(e.message));
   }, []);
 
-  if (erro) return <div className="p-8 text-sm bg-perigo-bg text-perigo rounded-xl">{erro}</div>;
+  if (erro) return <div className="p-4 sm:p-8 text-sm bg-perigo-bg text-perigo rounded-xl">{erro}</div>;
   if (!dados) return <div className="h-64 flex items-center justify-center"><div className="w-6 h-6 border-2 border-vivo-500 border-t-transparent rounded-full animate-spin" /></div>;
 
   return (
     <div>
       <CabecalhoPagina titulo="Dashboard do Administrador" subtitulo="Visão geral da utilização da plataforma." />
 
-      <div className="p-8 space-y-8">
+      <div className="p-4 sm:p-8 space-y-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <CardIndicador rotulo="Utilizadores registados" valor={dados.total_utilizadores} />
           <CardIndicador rotulo="Utilizadores ativos" valor={dados.utilizadores_ativos} />
@@ -38,7 +38,7 @@ export default function AdminDashboardPage() {
           {dados.simulacoes_recentes.length === 0 ? (
             <div className="painel p-8 text-center text-sm text-marfim-300">Ainda não existem simulações no sistema.</div>
           ) : (
-            <div className="painel overflow-hidden">
+            <div className="painel overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-white/5 text-left text-xs text-marfim-400 uppercase tracking-wide">

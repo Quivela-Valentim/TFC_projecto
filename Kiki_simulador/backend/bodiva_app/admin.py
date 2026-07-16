@@ -21,7 +21,7 @@ class UserAdmin(DjangoUserAdmin):
     list_filter = ("perfil", "is_active", "bloqueado_pelo_admin")
     search_fields = ("email", "username", "first_name", "last_name")
     fieldsets = DjangoUserAdmin.fieldsets + (
-        ("BODIVA Simulador", {
+        ("Kiki Simulador", {
             "fields": ("perfil", "phone", "bloqueado_pelo_admin", "tentativas_login_falhadas", "bloqueado_ate")
         }),
     )

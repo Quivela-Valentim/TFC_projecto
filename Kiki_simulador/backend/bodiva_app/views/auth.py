@@ -157,7 +157,7 @@ class PedirRecuperacaoPasswordView(APIView):
         link = f"{getattr(django_settings, 'FRONTEND_URL', 'http://localhost:5173')}/redefinir-password/{uid}/{token}/"
 
         send_mail(
-            subject="BODIVA Simulador — Recuperação de palavra-passe",
+            subject="Kiki Simulador — Recuperação de palavra-passe",
             message=f"Para redefinir a sua palavra-passe, aceda a: {link}\n\nSe não pediu esta recuperação, ignore este email.",
             from_email=getattr(django_settings, "DEFAULT_FROM_EMAIL", "no-reply@bodiva-sim.ao"),
             recipient_list=[user.email],

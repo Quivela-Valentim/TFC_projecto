@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth } from "./store/AuthContext";
 import Sidebar from "./components/shared/Sidebar";
 
+import WelcomePage from "./pages/WelcomePage";
 import LoginPage from "./pages/LoginPage";
 import RegistoPage from "./pages/RegistoPage";
 import RecuperarPasswordPage from "./pages/RecuperarPasswordPage";
@@ -60,7 +61,7 @@ function RotaOnboarding({ children }) {
 function RaizRedirect() {
   const { user, carregando } = useAuth();
   if (carregando) return <Carregando />;
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user) return <WelcomePage />;
   if (user.is_administrador) return <Navigate to="/admin/dashboard" replace />;
   if (!user.tem_carteira) return <Navigate to="/onboarding" replace />;
   return <Navigate to="/dashboard" replace />;
@@ -70,7 +71,7 @@ function ComSidebar({ children }) {
   return (
     <div className="flex min-h-screen bg-base-900">
       <Sidebar />
-      <div className="flex-1 min-w-0">{children}</div>
+      <div className="flex-1 min-w-0 pt-14 md:pt-0">{children}</div>
     </div>
   );
 }

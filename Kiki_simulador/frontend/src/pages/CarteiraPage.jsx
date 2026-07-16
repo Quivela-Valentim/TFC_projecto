@@ -41,7 +41,7 @@ export default function CarteiraPage() {
         }
       />
 
-      <div className="p-8 space-y-6">
+      <div className="p-4 sm:p-8 space-y-6">
         {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3">{erro}</div>}
 
         {carteira && (

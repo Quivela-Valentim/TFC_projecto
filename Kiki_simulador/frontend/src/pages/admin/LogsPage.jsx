@@ -56,7 +56,7 @@ export default function LogsPage() {
         }
       />
 
-      <div className="p-8 space-y-6">
+      <div className="p-4 sm:p-8 space-y-6">
         {erroExportar && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3">{erroExportar}</div>}
 
         <div className="painel p-5 flex items-end gap-3 flex-wrap">
@@ -77,7 +77,7 @@ export default function LogsPage() {
           <button className="btn-primario" onClick={carregar}>Filtrar</button>
         </div>
 
-        <div className="painel overflow-hidden">
+        <div className="painel overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-white/5 text-left text-xs text-marfim-400 uppercase tracking-wide">

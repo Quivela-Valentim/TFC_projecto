@@ -52,9 +52,9 @@ export default function Sidebar() {
     <aside className="w-60 flex-shrink-0 bg-base-850 border-r border-white/5 flex flex-col min-h-screen">
       <div className="px-5 py-5 border-b border-white/5">
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-vivo-500 rounded-lg flex items-center justify-center text-white text-sm font-display font-bold">B</div>
+          <div className="w-8 h-8 bg-vivo-500 rounded-lg flex items-center justify-center text-white text-sm font-display font-bold">K</div>
           <div>
-            <p className="font-display font-semibold text-marfim-50 text-sm leading-none">BODIVA Sim</p>
+            <p className="font-display font-semibold text-marfim-50 text-sm leading-none">Kiki Sim</p>
             <p className="text-[11px] text-marfim-400 mt-1">{isAdmin ? "Painel Administrador" : "Simulador de Investimento"}</p>
           </div>
         </div>
@@ -66,8 +66,8 @@ export default function Sidebar() {
             key={path}
             to={path}
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition ${
-                isActive ? "bg-vivo-500/15 text-vivo-400 font-medium" : "text-marfim-300 hover:text-marfim-50 hover:bg-white/5"
+              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-base font-medium transition ${
+                isActive ? "bg-vivo-500/15 text-vivo-400" : "text-marfim-300 hover:text-marfim-50 hover:bg-white/5"
               }`
             }
           >

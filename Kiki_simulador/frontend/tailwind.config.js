@@ -31,7 +31,7 @@ export default {
         aviso: { DEFAULT: "#F5A524", bg: "#3A2A0F" },
       },
       fontFamily: {
-        display: ["Sora", "system-ui", "sans-serif"],
+       display: ["Inter", "system-ui", "sans-serif"],
         body: ["Inter", "system-ui", "sans-serif"],
         mono: ["'IBM Plex Mono'", "monospace"],
       },

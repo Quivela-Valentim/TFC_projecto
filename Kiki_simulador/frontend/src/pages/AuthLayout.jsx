@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function AuthLayout({ titulo, subtitulo, children, largura = "max-w-md" }) {
   return (
     <div className="min-h-screen bg-base-900 flex items-center justify-center px-4 py-10 relative overflow-hidden">
@@ -8,13 +10,12 @@ export default function AuthLayout({ titulo, subtitulo, children, largura = "max
       </svg>
 
       <div className={`w-full ${largura} relative`}>
-        <div className="flex items-center gap-2.5 justify-center mb-8">
-          <div className="w-9 h-9 bg-vivo-500 rounded-lg flex items-center justify-center text-white font-display font-bold">B</div>
-          <span className="font-display font-semibold text-marfim-50 text-lg">BODIVA Simulador</span>
-        </div>
-
+        <Link to="/" className="flex items-center gap-2.5 justify-center mb-8 hover:opacity-80 transition">
+          <div className="w-9 h-9 bg-vivo-500 rounded-lg flex items-center justify-center text-white font-display font-bold">K</div>
+          <span className="font-display font-semibold text-marfim-50 text-lg">Kiki Simulador</span>
+        </Link>
         <div className="painel p-8">
-          <h1 className="font-display font-semibold text-2xl text-marfim-50">{titulo}</h1>
+          <h1 className="font-display font-bold text-[32px] text-marfim-50">{titulo}</h1>
           {subtitulo && <p className="text-sm text-marfim-300 mt-1.5">{subtitulo}</p>}
           <div className="mt-6">{children}</div>
         </div>

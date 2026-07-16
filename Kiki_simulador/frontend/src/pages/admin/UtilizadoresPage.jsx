@@ -59,10 +59,10 @@ export default function UtilizadoresPage() {
         }
       />
 
-      <div className="p-8">
+     <div className="p-4 sm:p-8">
         {erro && <div className="text-sm bg-perigo-bg text-perigo rounded-xl px-4 py-3 mb-4">{erro}</div>}
 
-        <div className="painel overflow-hidden">
+        <div className="painel overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-white/5 text-left text-xs text-marfim-400 uppercase tracking-wide">

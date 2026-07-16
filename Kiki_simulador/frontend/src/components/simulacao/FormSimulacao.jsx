@@ -64,7 +64,7 @@ export default function FormSimulacao({ onSimular, aProcessar }) {
         <input type="number" step="0.01" min="0.01" className="campo" value={valor} onChange={(e) => setValor(e.target.value)} required />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="rotulo">Data de início</label>
           <input type="date" className="campo" value={dataInicio} onChange={(e) => setDataInicio(e.target.value)} max={hoje} required />

@@ -59,7 +59,7 @@ export default function ModalAdicionarAtivo({ aberto, onFechar, onAdicionado }) 
               ))}
             </select>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="rotulo">Quantidade</label>
               <input type="number" step="0.0001" min="0.0001" className="campo" value={quantidade} onChange={(e) => setQuantidade(e.target.value)} required />

@@ -24,7 +24,7 @@ export default function HistoricoSimulacoes({ simulacoes, onComparar }) {
   }
 
   return (
-    <div className="painel overflow-hidden">
+    <div className="painel overflow-x-auto">
       <div className="flex items-center justify-between px-5 py-4 border-b border-white/5">
         <h2 className="font-display font-semibold text-marfim-50">Histórico de simulações</h2>
         <button

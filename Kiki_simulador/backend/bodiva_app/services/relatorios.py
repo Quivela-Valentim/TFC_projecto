@@ -59,7 +59,7 @@ def gerar_relatorio_simulacao(simulacao, investidor) -> bytes:
     estilos = _estilos()
     elementos = []
 
-    elementos.append(Paragraph("BODIVA Simulador", estilos["TituloBodiva"]))
+    elementos.append(Paragraph("Kiki Simulador", estilos["TituloBodiva"]))
     elementos.append(Paragraph("Relatório de Simulação de Investimento", estilos["SubtituloBodiva"]))
     elementos.append(HRFlowable(width="100%", color=AZUL_VIVO, thickness=1.2))
     elementos.append(Spacer(1, 12))
@@ -111,7 +111,7 @@ def gerar_relatorio_logs(logs, administrador, filtros_texto="") -> bytes:
     estilos = _estilos()
     elementos = []
 
-    elementos.append(Paragraph("BODIVA Simulador", estilos["TituloBodiva"]))
+    elementos.append(Paragraph("Kiki Simulador", estilos["TituloBodiva"]))
     elementos.append(Paragraph("Relatório Administrativo — Logs de Auditoria", estilos["SubtituloBodiva"]))
     elementos.append(HRFlowable(width="100%", color=AZUL_VIVO, thickness=1.2))
     elementos.append(Spacer(1, 12))

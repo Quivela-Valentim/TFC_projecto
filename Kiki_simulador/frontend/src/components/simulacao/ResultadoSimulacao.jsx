@@ -65,7 +65,7 @@ export default function ResultadoSimulacao({ resultado }) {
 
       <GraficoComparativo nominalPct={resultado.rentabilidade_nominal_pct} realPct={resultado.rentabilidade_real_pct} />
 
-      <div className="grid grid-cols-2 gap-4 text-sm border-t border-white/5 pt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm border-t border-white/5 pt-4">
         <div>
           <p className="text-xs text-marfim-400">Rentabilidade nominal</p>
           <p className={`numero text-lg font-semibold mt-1 ${Number(resultado.rentabilidade_nominal_pct) >= 0 ? "text-sucesso" : "text-perigo"}`}>

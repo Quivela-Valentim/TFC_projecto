@@ -39,7 +39,7 @@ export default function RegistoPage() {
   return (
     <AuthLayout titulo="Criar conta" subtitulo="Comece a simular investimentos na BODIVA sem risco real." largura="max-w-lg">
       <form onSubmit={submeter} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="rotulo">Nome</label>
             <input className="campo" value={form.first_name} onChange={atualizar("first_name")} required />
@@ -52,6 +52,7 @@ export default function RegistoPage() {
         <div>
           <label className="rotulo">Nome de utilizador</label>
           <input className="campo" value={form.username} onChange={atualizar("username")} required />
+          <p className="text-xs text-marfim-400 mt-1">Sem espaços — usa letras, números, ou . _ + -</p>
         </div>
         <div>
           <label className="rotulo">Email</label>
@@ -61,7 +62,7 @@ export default function RegistoPage() {
           <label className="rotulo">Telefone (opcional)</label>
           <input className="campo" value={form.phone} onChange={atualizar("phone")} />
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="rotulo">Palavra-passe</label>
             <input type="password" className="campo" value={form.password} onChange={atualizar("password")} required />

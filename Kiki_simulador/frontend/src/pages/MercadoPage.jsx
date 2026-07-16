@@ -40,7 +40,7 @@ export default function MercadoPage() {
     <div>
       <CabecalhoPagina titulo="Mercado BODIVA" subtitulo="Catálogo de ativos disponíveis e respetivo histórico de preços." />
 
-      <div className="p-8 space-y-6">
+      <div className="p-4 sm:p-8 space-y-6">
         <div className="flex gap-2">
           {TIPOS.map((t) => (
             <button
@@ -56,7 +56,7 @@ export default function MercadoPage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="painel overflow-hidden lg:col-span-1">
+          <div className="painel overflow-x-auto lg:col-span-1">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-white/5 text-left text-xs text-marfim-400 uppercase tracking-wide">
@@ -78,8 +78,8 @@ export default function MercadoPage() {
                       <p className="font-medium text-marfim-50">{a.ticker}</p>
                       <p className="text-xs text-marfim-400 truncate max-w-[140px]">{a.nome}</p>
                     </td>
-                    <td className="px-4 py-3 text-right numero text-marfim-200">{formatarAOA(a.preco_ultimo)}</td>
-                    <td className={`px-4 py-3 text-right numero text-xs font-medium ${Number(a.variacao_percentual) >= 0 ? "text-sucesso" : "text-perigo"}`}>
+                    <td className="px-4 py-3 text-right numero-mercado text-marfim-200">{formatarAOA(a.preco_ultimo)}</td>
+                    <td className={`px-4 py-3 text-right numero-mercado text-xs font-medium ${Number(a.variacao_percentual) >= 0 ? "text-sucesso" : "text-perigo"}`}>
                       {a.variacao_percentual != null ? formatarPct(a.variacao_percentual) : "—"}
                     </td>
                   </tr>
