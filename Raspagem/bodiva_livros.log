@@ -1,0 +1,538 @@
+2026-04-21 13:08:53,947 INFO Execução  iniciada 
+2026-04-21 13:33:42,799 INFO Execução  iniciada 
+2026-04-21 13:34:19,060 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 80, in <module>
+    df.columns = [
+    ^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 6220, in __setattr__
+    return object.__setattr__(self, name, value)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 273, in set_axis
+    self._validate_set_axis(axis, new_labels)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 288, in _validate_set_axis
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Length mismatch: Expected axis has 14 elements, new values have 11 elements
+2026-04-21 14:17:50,664 INFO Execução  iniciada 
+2026-04-21 14:18:29,092 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 81, in <module>
+    df.columns = [
+    ^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 6220, in __setattr__
+    return object.__setattr__(self, name, value)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 273, in set_axis
+    self._validate_set_axis(axis, new_labels)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 288, in _validate_set_axis
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Length mismatch: Expected axis has 14 elements, new values have 11 elements
+2026-04-21 14:32:45,056 INFO Execução  iniciada 
+2026-04-21 14:33:23,479 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 81, in <module>
+    df.columns = [
+    ^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 6220, in __setattr__
+    return object.__setattr__(self, name, value)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 273, in set_axis
+    self._validate_set_axis(axis, new_labels)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 288, in _validate_set_axis
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Length mismatch: Expected axis has 14 elements, new values have 11 elements
+2026-04-21 14:36:16,456 INFO Execução  iniciada 
+2026-04-21 14:36:54,369 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 82, in <module>
+    df.columns = [
+    ^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 6220, in __setattr__
+    return object.__setattr__(self, name, value)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 273, in set_axis
+    self._validate_set_axis(axis, new_labels)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 288, in _validate_set_axis
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Length mismatch: Expected axis has 14 elements, new values have 11 elements
+2026-04-21 14:49:18,152 INFO Execução  iniciada 
+2026-04-21 14:49:57,517 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 82, in <module>
+    df.columns = [
+    ^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 6220, in __setattr__
+    return object.__setattr__(self, name, value)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 273, in set_axis
+    self._validate_set_axis(axis, new_labels)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 288, in _validate_set_axis
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Length mismatch: Expected axis has 14 elements, new values have 12 elements
+2026-04-21 14:52:20,747 INFO Execução  iniciada 
+2026-04-21 14:53:01,327 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 82, in <module>
+    df.columns = [
+    ^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 6220, in __setattr__
+    return object.__setattr__(self, name, value)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\generic.py", line 766, in _set_axis
+    self._mgr.set_axis(axis, labels)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 273, in set_axis
+    self._validate_set_axis(axis, new_labels)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\core\internals\managers.py", line 288, in _validate_set_axis
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Length mismatch: Expected axis has 14 elements, new values have 12 elements
+2026-04-21 14:56:53,177 INFO Execução  iniciada 
+2026-04-21 15:12:30,814 INFO Execução  iniciada 
+2026-04-21 16:36:53,204 INFO Execução  iniciada 
+2026-04-21 16:37:33,299 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 194, in <module>
+    cursor.executemany(sql, records)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 182, in executemany
+    return self._do_execute_many(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        q_prefix,
+        ^^^^^^^^^
+    ...<4 lines>...
+        self._get_db().encoding,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 205, in _do_execute_many
+    v = values % escape(next(args), conn)
+        ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+KeyError: 'insin'
+2026-04-21 16:41:58,839 INFO Execução  iniciada 
+2026-04-21 16:42:38,084 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 194, in <module>
+    cursor.executemany(sql, records)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 182, in executemany
+    return self._do_execute_many(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        q_prefix,
+        ^^^^^^^^^
+    ...<4 lines>...
+        self._get_db().encoding,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 205, in _do_execute_many
+    v = values % escape(next(args), conn)
+        ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+KeyError: 'ultimo_cotacao'
+2026-04-21 16:43:52,526 INFO Execução  iniciada 
+2026-04-21 16:44:31,524 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 194, in <module>
+    cursor.executemany(sql, records)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 182, in executemany
+    return self._do_execute_many(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        q_prefix,
+        ^^^^^^^^^
+    ...<4 lines>...
+        self._get_db().encoding,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 205, in _do_execute_many
+    v = values % escape(next(args), conn)
+        ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+KeyError: 'yield_compra'
+2026-04-21 16:47:46,167 INFO Execução  iniciada 
+2026-04-21 16:48:26,867 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 194, in <module>
+    cursor.executemany(sql, records)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 182, in executemany
+    return self._do_execute_many(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        q_prefix,
+        ^^^^^^^^^
+    ...<4 lines>...
+        self._get_db().encoding,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 220, in _do_execute_many
+    rows += self.execute(sql + postfix)
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'isin' in 'field list'")
+2026-04-21 17:02:34,194 INFO Execução  iniciada 
+2026-04-21 17:03:15,495 INFO Execução terminada. Dados com sucesso
+2026-04-22 23:33:39,155 INFO Execução  iniciada 
+2026-04-22 23:34:13,981 INFO Execução terminada. Dados com sucesso
+2026-04-23 22:39:17,423 INFO Execução  iniciada 
+2026-04-23 22:39:55,560 INFO Execução terminada. Dados com sucesso
+2026-04-24 23:08:41,437 INFO Execução  iniciada 
+2026-04-24 23:08:45,365 INFO Execução terminada. Dados com sucesso
+2026-04-25 17:35:22,063 INFO Execução  iniciada 
+2026-04-25 17:35:25,686 INFO Execução terminada. Dados com sucesso
+2026-04-26 20:52:38,021 INFO Execução  iniciada 
+2026-04-26 20:52:41,528 INFO Execução terminada. Dados com sucesso
+2026-04-28 17:49:11,997 INFO Execução  iniciada 
+2026-04-28 17:49:49,319 INFO Execução terminada. Dados com sucesso
+2026-04-29 22:00:11,211 INFO Execução  iniciada 
+2026-04-29 22:00:47,280 INFO Execução terminada. Dados com sucesso
+2026-04-30 22:44:39,522 INFO Execução  iniciada 
+2026-04-30 22:44:41,452 INFO Execução terminada. Dados com sucesso
+2026-05-01 19:27:09,994 INFO Execução  iniciada 
+2026-05-01 19:27:11,954 INFO Execução terminada. Dados com sucesso
+2026-05-05 15:44:57,599 INFO Execução  iniciada 
+2026-05-05 15:45:34,896 INFO Execução terminada. Dados com sucesso
+2026-05-06 22:16:30,178 INFO Execução  iniciada 
+2026-05-06 22:17:07,923 INFO Execução terminada. Dados com sucesso
+2026-05-07 23:51:03,052 INFO Execução  iniciada 
+2026-05-07 23:51:37,704 INFO Execução terminada. Dados com sucesso
+2026-05-08 23:05:53,824 INFO Execução  iniciada 
+2026-05-08 23:05:55,903 INFO Execução terminada. Dados com sucesso
+2026-05-09 22:32:23,494 INFO Execução  iniciada 
+2026-05-09 22:32:25,774 INFO Execução terminada. Dados com sucesso
+2026-05-11 16:16:15,088 INFO Execução  iniciada 
+2026-05-11 16:16:51,125 INFO Execução terminada. Dados com sucesso
+2026-05-12 11:14:37,134 INFO Execução  iniciada 
+2026-05-12 11:15:05,339 INFO Execução terminada. Dados com sucesso
+2026-05-13 10:59:53,221 INFO Execução  iniciada 
+2026-05-13 11:00:26,607 INFO Execução terminada. Dados com sucesso
+2026-05-15 22:35:39,526 INFO Execução  iniciada 
+2026-05-15 22:36:16,658 INFO Execução terminada. Dados com sucesso
+2026-05-19 16:04:42,195 INFO Execução  iniciada 
+2026-05-19 16:05:18,747 INFO Execução terminada. Dados com sucesso
+2026-05-20 14:26:19,574 INFO Execução  iniciada 
+2026-05-20 14:26:54,650 INFO Execução terminada. Dados com sucesso
+2026-05-23 22:38:52,316 INFO Execução  iniciada 
+2026-05-23 22:38:55,478 INFO Execução terminada. Dados com sucesso
+2026-05-24 22:30:30,180 INFO Execução  iniciada 
+2026-05-24 22:30:32,780 INFO Execução terminada. Dados com sucesso
+2026-05-25 15:47:14,505 INFO Execução  iniciada 
+2026-05-25 15:47:50,205 INFO Execução terminada. Dados com sucesso
+2026-05-26 12:44:26,770 INFO Execução  iniciada 
+2026-05-26 12:45:01,584 INFO Execução terminada. Dados com sucesso
+2026-05-28 10:08:26,457 INFO Execução  iniciada 
+2026-05-28 10:09:04,648 INFO Execução terminada. Dados com sucesso
+2026-05-29 12:31:35,712 INFO Execução  iniciada 
+2026-05-29 12:32:14,783 INFO Execução terminada. Dados com sucesso
+2026-05-31 21:29:44,325 INFO Execução  iniciada 
+2026-05-31 21:29:47,014 INFO Execução terminada. Dados com sucesso
+2026-06-01 12:43:24,024 INFO Execução  iniciada 
+2026-06-01 12:43:55,645 INFO Execução terminada. Dados com sucesso
+2026-06-02 11:08:11,363 INFO Execução  iniciada 
+2026-06-02 11:08:39,740 INFO Execução terminada. Dados com sucesso
+2026-06-03 15:50:19,368 INFO Execução  iniciada 
+2026-06-03 15:51:19,458 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 62, in <module>
+    raise Exception( f"Erro ao descarregar o ficheiro:{response.status_code}")
+Exception: Erro ao descarregar o ficheiro:504
+2026-06-05 23:07:26,329 INFO Execução  iniciada 
+2026-06-05 23:08:05,121 INFO Execução terminada. Dados com sucesso
+2026-06-06 22:46:51,299 INFO Execução  iniciada 
+2026-06-06 22:46:53,755 INFO Execução terminada. Dados com sucesso
+2026-06-08 16:16:12,738 INFO Execução  iniciada 
+2026-06-08 16:16:54,185 INFO Execução terminada. Dados com sucesso
+2026-06-10 09:58:36,763 INFO Execução  iniciada 
+2026-06-10 09:59:04,736 INFO Execução terminada. Dados com sucesso
+2026-06-11 10:19:42,582 INFO Execução  iniciada 
+2026-06-11 10:20:15,934 INFO Execução terminada. Dados com sucesso
+2026-06-12 12:36:06,965 INFO Execução  iniciada 
+2026-06-12 12:36:53,354 INFO Execução terminada. Dados com sucesso
+2026-06-15 11:30:06,886 INFO Execução  iniciada 
+2026-06-15 11:30:54,305 INFO Execução terminada. Dados com sucesso
+2026-06-16 12:08:25,545 INFO Execução  iniciada 
+2026-06-16 12:09:25,862 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 62, in <module>
+    raise Exception( f"Erro ao descarregar o ficheiro:{response.status_code}")
+Exception: Erro ao descarregar o ficheiro:504
+2026-06-17 10:05:20,501 INFO Execução  iniciada 
+2026-06-17 10:06:20,612 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 62, in <module>
+    raise Exception( f"Erro ao descarregar o ficheiro:{response.status_code}")
+Exception: Erro ao descarregar o ficheiro:504
+2026-06-17 10:07:23,537 INFO Execução  iniciada 
+2026-06-17 10:08:23,656 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 62, in <module>
+    raise Exception( f"Erro ao descarregar o ficheiro:{response.status_code}")
+Exception: Erro ao descarregar o ficheiro:504
+2026-06-17 12:27:41,646 INFO Execução  iniciada 
+2026-06-17 12:28:41,760 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 62, in <module>
+    raise Exception( f"Erro ao descarregar o ficheiro:{response.status_code}")
+Exception: Erro ao descarregar o ficheiro:504
+2026-06-17 14:55:07,614 INFO Execução  iniciada 
+2026-06-17 14:55:07,939 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 59, in <module>
+    response = session.get(url, headers=headers, timeout=(60,720), verify=False, stream=True)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 605, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 660, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-17 17:45:37,117 INFO Execução  iniciada 
+2026-06-17 17:46:14,884 INFO Execução terminada. Dados com sucesso
+2026-06-18 12:13:02,021 INFO Execução  iniciada 
+2026-06-18 12:13:32,127 INFO Execução terminada. Dados com sucesso
+2026-06-19 11:08:09,676 INFO Execução  iniciada 
+2026-06-19 11:08:40,393 INFO Execução terminada. Dados com sucesso
+2026-06-22 10:10:58,724 INFO Execução  iniciada 
+2026-06-22 10:11:24,856 INFO Execução terminada. Dados com sucesso
+2026-06-23 11:30:17,678 INFO Execução  iniciada 
+2026-06-23 11:31:17,827 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 62, in <module>
+    raise Exception( f"Erro ao descarregar o ficheiro:{response.status_code}")
+Exception: Erro ao descarregar o ficheiro:504
+2026-06-23 23:48:45,748 INFO Execução  iniciada 
+2026-06-23 23:49:23,972 INFO Execução terminada. Dados com sucesso
+2026-06-24 22:27:31,722 INFO Execução  iniciada 
+2026-06-24 22:31:37,891 INFO Execução terminada. Dados com sucesso
+2026-06-25 23:27:06,158 INFO Execução  iniciada 
+2026-06-25 23:27:45,684 INFO Execução terminada. Dados com sucesso
+2026-06-26 11:22:30,377 INFO Execução  iniciada 
+2026-06-26 11:23:02,454 INFO Execução terminada. Dados com sucesso
+2026-06-29 17:50:12,320 INFO Execução  iniciada 
+2026-06-29 17:51:12,432 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 62, in <module>
+    raise Exception( f"Erro ao descarregar o ficheiro:{response.status_code}")
+Exception: Erro ao descarregar o ficheiro:504
+2026-06-29 23:59:51,751 INFO Execução  iniciada 
+2026-06-29 23:59:55,325 ERROR Erro de execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva_livros.py", line 59, in <module>
+    response = session.get(url, headers=headers, timeout=(60,720), verify=False, stream=True)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 605, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 660, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-30 14:03:32,106 INFO Execução  iniciada 
+2026-06-30 14:04:14,534 INFO Execução terminada. Dados com sucesso
+2026-07-01 13:46:04,339 INFO Execução  iniciada 
+2026-07-01 13:47:00,135 INFO Execução terminada. Dados com sucesso
+2026-07-06 14:10:46,172 INFO Execução  iniciada 
+2026-07-06 14:10:48,768 INFO Execução terminada. Dados com sucesso
+2026-07-07 20:10:33,639 INFO Execução  iniciada 
+2026-07-07 20:10:35,915 INFO Execução terminada. Dados com sucesso
+2026-07-08 20:09:51,864 INFO Execução  iniciada 
+2026-07-08 20:09:54,122 INFO Execução terminada. Dados com sucesso
+2026-07-09 17:46:37,198 INFO Execução  iniciada 
+2026-07-09 17:46:39,431 INFO Execução terminada. Dados com sucesso
+2026-07-10 16:40:29,785 INFO Execução  iniciada 
+2026-07-10 16:40:31,815 INFO Execução terminada. Dados com sucesso
+2026-07-13 16:16:30,507 INFO Execução  iniciada 
+2026-07-13 16:16:33,250 INFO Execução terminada. Dados com sucesso
+2026-07-14 23:59:45,414 INFO Execução  iniciada 
+2026-07-14 23:59:47,631 INFO Execução terminada. Dados com sucesso
+2026-07-15 18:49:31,381 INFO Execução  iniciada 
+2026-07-15 18:49:32,890 INFO Execução terminada. Dados com sucesso

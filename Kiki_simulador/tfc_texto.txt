@@ -1,0 +1,755 @@
+[Normal] INSTITUTO SUPERIOR DE ADMINISTRAÇÃO E FINANÇAS 
+[Normal] CURSO DE INFORMÁTICA DE GESTÃO FINANCEIRA 
+[Normal] SIMULADOR DE INVESTIMENTO EM OBRIGAÇÕES DE TESOUROS E ACÇÕES DA BODIVA COM ANÁLISE DE RENTABILIDADE REAL (AJUSTADA COM A INFLAÇÃO)
+[Normal] Autor: 
+[Normal] António João Valentim 
+[Normal] Orientador:
+[Normal] Edilson Cruz 
+[Normal] LUANDA, 2026
+[Normal] INSTITUTO SUPERIOR DE ADMINISTRAÇÃO E FINANÇAS 
+[Normal] CURSO DE INFORMÁTICA DE GESTÃO FINANCEIRA 
+[Normal] SIMULADOR DE INVESTIMENTOS EM OBRIGAÇÕES DE TESOUROS E ACÇÕES DA BODIVA COM ANÁLISE DE RENTABILIDADE REAL (AJUSTADA COM A INFLAÇÃO)
+[Normal] Autor: 
+[Normal] António João Valentim 
+[Normal] Orientador:
+[Normal] Edilson Cruz 
+[Normal] LUANDA, 2026
+[Normal] SIMULADOR DE INVESTIMENTOS EM OBRIGAÇÕES DE TESOUROS E ACÇÕES DA BODIVA COM ANÁLISE DE RENTABILIDADE REAL (AJUSTADA COM A INFLAÇÃO)
+[Normal] AUTOR(A):
+[Normal] António João Valentim 
+[Normal] Trabalho de Conclusão do curso apresentado ao Instituto Superior de Administração e Finanças – ISAF, como uma parte dos requisitos para obtenção do grau académico de Licenciatura em Informática de Gestão Financeira.
+[Normal] BANCADA EXAMINADORA
+[Normal] ________________________________________________________________
+[Normal] Prof. – Orientador 
+[Normal] IGF/ISAF
+[Normal] ________________________________________________________________
+[Normal] Prof. – Arguente 
+[Normal] IGF/ISAF
+[Normal] ________________________________________________________________
+[Normal] Prof. – Presidente da Banca 
+[Normal] IGF/ISAF
+[Normal] LUANDA, 2026
+[Normal] COMPROMISSO DO AUTOR(A)
+[Normal] Eu, António João Valentim, portador do documento de identidade 009207158BO044 e estudante do curso de Licenciatura de Informática de Gestão Financeira, declaro que: 
+[Normal] O conteúdo do presente documento é um reflexo do meu trabalho pessoal e manifesto que, diante de qualquer notificação de plágio, cópia ou prejuízo à fonte original, sou responsável directo legal, financeira e administrativamente, sem afetar o orientador do trabalho, o ISAF e demais instituições que colaboraram neste trabalho, assumindo as consequências derivadas de tais práticas. 
+[Normal] E venho por este meio, autorizar a disponibilização da versão aprovada do meu Trabalho de Conclusão do Curso com título Simulador de Investimentos em Obrigações de Tesouros e Acções da BODIVA Com Análise de Rentabilidade Real (Ajustada com a Inflação).
+[Normal] Assinatura: _______________________________________________________
+[Normal] Dedico este trabalho aos meus pais, que muito fizeram para que eu chegasse até aqui onde cheguei, com orações, conselhos, trabalho árduo, acompanhamento, carinho e rigor, sendo eles a fonte inspiradora para que esse caminho fosse concluído. 
+[Normal] À minha família, pelo amor e pelos valores que me proporcionaram ao longo dessa caminhada, ao apoio incondicional e aos ensinamentos úteis que me depositaram, pois sem eles essa caminhada quase não seria possível. 
+[Normal] AGRADECIMENTOS
+[Normal] Agradeço a Deus, todo poderoso, pelo fôlego de vida, pela inteligência, discernimento e por proteger-me a todo esse tempo para que pudesse chegar onde eu cheguei e concretizar essa licenciatura que tanto almejo. 
+[Normal] À família, especialmente os meus progenitores, pelo apoio incondicional seja ela financeira ou emocional, pela motivação, inspiração, pois isso fizeram de mim o que sou e ajudaram-me a chegar até aqui. Aos irmãos mais velhos, que foram mais outra fonte inspiração minha, pelo seus conselhos e suporte. 
+[Normal] À FBAI e ao BAI, meu muito obrigado pelo financiamento e suporte dado durante esses 4 anos que passei nessa lindíssima instituição que é o ISAF, pois parte dessa licenciatura foi possível graça a vocês. 
+[Normal] Ao ISAF, por me proporcionar uma estrutura digna de ensino académico e excelentes professores que muito ajudaram na aquisição do conhecimento científico e não só, especialmente o nosso coordenador do curso Odeir Fortunato pelo incentivo e energia passada para construção desse projecto. Ao meu orientador Edilson cruz, pelo conselho, orientação e apoio durante a construção desse projecto. Aos colegas, pelas trocas de ideias, experiências vividas e incentivo mútuo durante essa caminhada.
+[Normal] Aos amigos, pelo apoio, incentivo, energia passada e por estarem sempre lá quando precisava da vossa ajuda, vocês foram uma força motriz de tudo.
+[Normal] Obrigado a todos que contribuíram directa ou indirectamente para que tudo isso fosse possível, meus mais sinceros agradecimentos.   
+[Normal] “Bem-aventurado aquele que acha a sabedoria e adquire o conhecimento; porque melhor é o lucro que ela dá do que da prata, e melhor a sua renda do que o ouro mais fino. A sabedoria é mais preciosa do as pérolas, e tudo o que podes desejar não é comparável a ela.”
+[Normal] (Provérbios 3: 13-15)
+[Heading 1] INTRODUÇÃO
+[Normal] O mercado de capitais em Angola tem apresentado um crescimento significativo ao longo desses anos. Pois ele desempenha um papel fundamental no desenvolvimento económico, ao permitir a mobilização eficiente e com a total transparência da poupança para o investimento produtivo.
+[Normal] O fomento da BODIVA representa um marco relevante no fortalecimento do sistema financeiro nacional. A negociação de Obrigações de Tesouros e a crescente admissão de empresas ao mercado accionista aumentam as oportunidades de investimento para particulares e instituições. Apesar desse crescimento institucional do mercado, percebe-se que ainda existe muita gente que pretende investir, mas não tem um conhecimento do mercado financeiro.
+[Normal] Com o avanço das tecnologias de informação tem se percebido o desenvolvimento de plataformas digitais que agilizam o acesso à informação financeira e promovem a educação económica. A integração de sistemas, base de dados e modelagem financeira constitui forma estratégica para apoiar as decisões de investimentos baseados em dados históricos e projecções analíticas.
+[Normal] Nesse contexto, o trabalho projeto propõe o desenvolvimento de uma plataforma web de simulação de investimento em Obrigações de Tesouros e Acções negociadas na BODIVA, incorporando a análise rentabilidade nominal e real ajustada à inflação. A investigação pretende contribuir para avanço de literacia financeira em Angola. 
+[Heading 2] Problemática da Investigação
+[Normal] Com crescimento do mercado de capitais angolano ao longo desses anos e o incremento da BODIVA e a emissão regular de Obrigação de Tesouros do Estado Angolano, nota-se que investidor comum ainda possui algumas dificuldades, como: 
+[List Paragraph] Baixo conhecimento do mercado financeiro;
+[List Paragraph] Pouco de número de plataformas digitais que permitem simular investimentos com base nos dados reais;
+[List Paragraph] Baixa compreensão sobre o impacto da inflação na rentabilidade real;
+[Normal] Com base nessas preocupações estabelecidas, coloca-se a seguinte questão de investigação:
+[Normal] Como o desenvolvimento de uma plataforma web que permite o investidor comum simular investimento em Obrigações de Tesouros e ações negociadas na BODIVA, analisando a rentabilidade nominal e real ajustada à inflação, ajudaria no aumento da educação financeira?
+[Heading 2] Hipóteses do Problema
+[Normal] De modo a dar resposta a problemática levantada, obteve-se as seguintes hipóteses: 
+[Normal] H0: A utilização do simulador de investimentos melhora compreensão do investidor comum sobre rentabilidade real. 
+[Normal] H1: O ajuste á inflação altera significativamente a percepção do retorno do investimento.  
+[Heading 2] Objectivos da Investigação
+[Normal] Para o desenvolvimento desse trabalho foram elaborados os objectivos geral e específicos que são descritos a seguir:
+[Heading 3] Objectivo Geral
+[Normal] Desenvolver uma plataforma web que permite simular investimentos em Obrigações de tesouros e Acções da BODIVA, analisando a rentabilidade nominal e real ajustada com a inflação. 
+[Heading 3] Objectivos Específicos 
+[List Paragraph] Apresentar conceitos sobre mercado financeiros propriamente o mercado de capitais e identificar os principais activos negociados na BODIVA;
+[List Paragraph] Consolidar dados históricos do mercado e índices de inflação;
+[List Paragraph] Criar uma plataforma com interface intuitiva que permite o investidor comum fazer o seu registo, login, criar uma carteira fictícia e simular investimentos com base nos dados públicos da BODIVA;
+[List Paragraph] Desenvolver mecanismos de segurança de modo a garantir a integridade, a confiabilidade dos dados dos investidores;
+[Heading 2] Justificativa 
+[Normal] O mercado de capitais angolano encontra-se em crescimento, mas ainda apresenta limitações ao que se refere as ferramentas tecnológicas que ajudem o investidor comum no estudo adequado da rentabilidade dos activos financeiros. O presente estudo justifica-se pela necessidade de aplicar conhecimentos teóricos de finanças com soluções tecnológicas de acordo a realidade angolana, contribuindo para compreensão do mercado de capitais e do impacto da inflação sobre os investimentos. Do ponto vista geral, o tema é crucial para o fortalecimento do mercado financeiro e para promoção da educação financeira. Em termos específicos, favorece os investidores, estudantes e pequenos aplicadores que necessitam de mecanismos de apoio à tomada de decisões. Assim, o desenvolvimento de uma plataforma web que permite simular investimento poderá contribuir para uma maior clareza na rentabilidade real, incentivando decisões financeiras mais consciente e fundamentadas.
+[Heading 1] FUNDAMENTAÇÃO TEÓRICA
+[Heading 2] Sistema Financeiro 
+[Heading 3] Definição 
+[Normal] O sistema financeiro compreende o conjunto de instituições, productos e instrumentos que viabiliza a transferência de recursos ou activos financeiros entre os agentes superavitários e os agentes deficitários da economia. 
+[Normal] O sistema financeiro poder visto como uma rede de mercado e instituições cuja função é transferir os fundos disponíveis dos poupadores, ou seja, aqueles cuja a renda é maior do que os gastos, para os investidores, isto é, aqueles cuja as oportunidades de gastos são maiores que a sua renda. 
+[Normal] O sistema financeiro também pode ser entendido como a soma das unidades operacionais que os compõem e dos responsáveis pelas políticas monetárias, creditícia, cambial e fiscal que regulam o seu funcionamento, bem como os fluxos monetários entre os que dispõem de recursos financeiros e os que deles carecem para suas actividades de produção ou consumo. 
+[Normal] Segundo Rossetti (1997), o sistema financeiro das nações difere quanto a pelo menos cincos aspectos: 
+[List Paragraph] Os padrões com que as instituições normativas interferem nas regras de intermediações;
+[List Paragraph] As diversidades das instituições de intermediação e as suas carteiras operacionais;
+[List Paragraph] Os tipos de instrumentos de captação de recursos e de operações activas; 
+[List Paragraph]  A estruturas dos activos financeiros, monetários e não monetários, quanto as taxas de participação de cada um deles no estoque do sistema em um todo;
+[List Paragraph] O grau de abertura em relação ao sistema financeira internacional;
+[Normal] O sistema financeiro é um dos sectores mais regulamentados do mundo. Isso ocorre porque os governos devem aumentar a informação disponível aos participantes, garantir o funcionamento adequado do sistema e exercer ou controle da oferta da moeda. 
+[Normal] Se o sistema financeiro não acompanha as exigências das modificações da economia, ou se funcionam em sentido oposto a elas, isso tenderá constituir-se em grave obstáculos às actividades produtivas, desincentivando o esforço da colectividade, que verá frustrados os seus justos anseios de progresso. 
+[Normal] O mau funcionamento do sistema financeiro gera perturbações nos fluxos monetários, cujos efeitos, quando excessivos, são de demorada correcção e manifestam-se da seguinte: 
+[List Paragraph] Luta desenfreada pelos recursos financeiros, encarecendo-os;
+[List Paragraph] Transferências de actividades económicas de iniciativas privadas para o sector público;
+[List Paragraph] Instabilidade do nível de preços e consequente inutilização das provisões económicas; 
+[List Paragraph] Desvirtuamento das funções das instituições financeiras elevando o custo do dinheiro e gerando um descrédito com o público;
+[List Paragraph] Insuficiência da dinamização do sistema financeiro nacional, que passa a funcional como um sistema arterial esclerosado;
+[List Paragraph] Desestimulo à poupança espontânea dos indivíduos e das empresas, que passa ser substituída pela de carácter esforçado, nem sempre transformada em investimento, mas despesa de custeio do Estado;
+[Normal] O sistema financeiro, de maneira simplificada, contribui para em três funções básicas:  
+[List Paragraph] Facilitar a designação temporal e espacial dos recursos, permitindo que os agentes transladem as suas decisões de investimento e consumo entre os distintos momentos e áreas geográficas, aumentando as suas possibilidades de eleição;
+[List Paragraph] Possibilitar a mobilização da poupança ao investimento, permitindo que a poupança encontre o seu uso alternativo mais produtivo; 
+[List Paragraph] Proporcionar ferramentas para redistribuição e diversificação dos riscos, permitindo a sua gestão por partes dos agentes;
+[Normal] Ainda podemos dizer que as principais funções do sistema financeiro na economia são:  
+[List Paragraph] Promover a poupança;
+[List Paragraph] Arrecadar e concentrar a poupança em grandes volumes;
+[List Paragraph] Transformar a poupança em créditos especiais:
+[List Paragraph] Encaminhar créditos às actividades produtivas;
+[List Paragraph] Gerenciar as aplicações realizadas e manter um mercado para elas;
+[Normal] A justificativa para o desenvolvimento do sistema financeiro é que, algumas unidades económicas gastam menos do que recebem e adiam temporariamente o seu consumo (poupam), e outras, gastam acima dos seus ingressos, antecipam os seus consumos e devem solicitar recursos emprestados no mercado. As primeiras são unidades superavitárias ou superavitárias de liquidez monetárias, e as segundas, são unidades deficitárias.
+[Normal] Para mobilizar a poupança das unidades superavitárias de liquidez até as unidades deficitárias, faz falta um mercado financeiro organizado onde, por meio dos intermediários financeiros, se consiga pôr em contacto estas unidades.  
+[Normal] A vantagem de dirigir-se a um mercado organizado por ambas partes é a maximização do tempo, pois, além de encontrar transparência, há a condições de operar, e como custo que as partes terão de suportar, está na comissão que os intermediários cobram pela gestão.
+[Normal] No sistema financeiro há sempre três elementos fundamentais: 
+[List Paragraph] Instituições ou intermediários financeiros: envolve os bancos, fundos de investimentos, e outros;
+[List Paragraph] Mercado financeiro: envolve o mercado de capitais, mercado cambial, mercado crédito, monetário e outros. 
+[List Paragraph] Instrumentos ou activos financeiros: envolve as acções, obrigações de tesouros, divisas e outros. 
+[Normal] A evolução dos sistemas financeiros pode ser distinguida por três etapas: 
+[List Paragraph] Fase baseadas nos bancos. 
+[List Paragraph] A evolução caracteriza-se porque nela os bancos são protagonistas das funções básicas que assumem os sistemas financeiros: captação e investimento da poupança financeiro, controlo e disciplina da actuação dos seus clientes e administração do sistema de pagamentos da economia.
+[List Paragraph] Fase baseada no mercado. 
+[List Paragraph] Caracteriza-se pela aparição e crescente importância das instituições não bancárias. Essas instituições introduzem novos instrumentos financeiros nos mercados de capitais e monetários, competindo com os bancários na captação e colocação dos fundos.
+[List Paragraph] Fase em que se produz um forte desenvolvimento da titularização.
+[List Paragraph] Caracteriza-se pela transferência da função de captação e alocação de novos fundos de poupança de intermediários financeiros directamente para o mercado.
+[Normal] Segundo Pinheiro (2019), no final da década de 1980 já sinalizava as necessidades que o novo panorama financeiro nos traria, entre destacam-se: 
+[List Paragraph] Transferência dos riscos em curso;
+[List Paragraph] Transferência do risco de crédito; 
+[List Paragraph] Crescimento da liquidez dos empréstimos ou dos investimentos;
+[List Paragraph] Acesso a novos recursos de fundos 
+[List Paragraph] Incrementos dos fundos próprios e capital de riscos;
+[Heading 3] Mercado financeiro 
+[Normal] Para entender o conceito do mercado financeiro devemos compreender primeiro o que é o mercado. 
+[Normal] Segundo Oliveira e Pacheco (2017, p.17), mercado pode ser compreendido como processo pelo qual as pessoas interessadas em vender algum produto ou serviço encontram-se com pessoas interessadas em comprar esse mesmo produto ou serviço. Tantos compradores, quanto os vendedores, após uma análise das suas alternativas, realizam a transação que melhor atende as suas necessidades estabelecendo um preço de equilíbrio em um processo conhecido como a lei de oferta e demanda. 
+[Normal] Logo, podemos dizer que o mercado financeiro é um sistema que intermedia e gera liquidez aos títulos e aos valores mobiliários das empresas, para que consiga captar recursos para investirem em seus negócios através de bolsas de valores, correctoras e outras instituições autorizadas. 
+[Normal] Segundo Oliveira e Pacheco (2017, p.22), o mercado financeiro pode ser divididos em quatros segmentos: mercado de capitais, mercado monetário, mercado de crédito e mercado cambial. 
+[Normal] Mercado de capitais: é onde ocorre a comercialização de activos de renda fixa e variável, como por exemplo, parte do capital da empresa, designadas como acções, obrigações de tesouros, certificado de depósito bancário, commercial papers, bónus de subscrição entre outros. 
+[Normal] Mercado monetários: é onde são realizadas as operações de curto prazo, com objectivo de equilibrar a liquidez da base monetária da economia. 
+[Normal] Mercado de crédito: é onde ocorre a maior parte das operações que envolvem as instituições financeiras, normalmente de curto e médios prazos. O objectivo dessas operações é a capitalização das empresas e o financiamento do consumo. 
+[Normal] Mercado cambial: é onde ocorrem as operações de troca de moedas estrangeiras pela moeda nacional. 
+[Normal] Em Angola, segundo a Comissão de Mercado de Capitais (CMC), existem ainda mercado como: mercado de seguros e mercado de fundos de pensões.
+[Normal] Mercado de seguros: é onde são realizadas as operações de transferência e gestão de riscos, através de contratos de uma parte (o segurado) paga por um prémio para que a outra parte (a seguradora), assuma a responsabilidade financeira pelas eventuais perdas futuras previamente definidas. 
+[Normal] Mercado de fundo: é onde são realizadas as operações dedicadas às formações de poupança de longo prazo, com objectivo de assegurar rendimentos complementares e substitutivos da reforma/aposentadoria dos trabalhadores. 
+[Heading 2] Mercado de capitais em Angola 
+[Normal] Mercado de capitais é um lugar onde empresas, sejam elas públicas ou privadas, através de instituições financeiras, procuram por recursos de terceiros para financiar os seus investimentos, através de emissão de títulos e valores mobiliários e onde os investidores procuram investir os seus recursos financeiros para obter um rendimento maior no futuro. 
+[Normal] Pinheiro (2012, p.174), o mercado de capitais poder ser compreendido como um conjunto de instituições e de instrumentos que negociam com títulos e valores mobiliários, com objectivo de mobilizar os recursos dos agentes compradores para os agentes vendedores, ou seja, representa um sistema de distribuição de valores mobiliários que tem como propósito de viabilizar a capitalização das empresas e dar liquidez aos títulos emitidos por elas. 
+[Normal] O mercado de capitais em Angola é um componente fundamental do sistema financeiro nacional, para estruturado para facilitar os recursos entre agentes excedentários(investidores) para agentes deficitários (empresas e Estado). 
+[Heading 3] Entidade Reguladora e Entidades chaves do Mercado de capitais.
+[Normal] O mercado de capitais em Angola é supervisionado pela CMC (Comissão Mercado de Capitais) que tem a responsabilidade de regular, supervisionar, fiscalizar e promover o Mercado de Valores Mobiliários (MVM) e de instrumentos derivados, bem como os agentes que actuam neles. A CMC actua na fiscalização, na prevenção de riscos sistémicos e garantia de segurança jurídica e sã concorrência do mercado. Assegura a transparência sobre as operações realizadas em MVM.  
+[Normal] A BODIVA (Bolsa de Dívidas e Valores em Angola) é um espaço físico com plataforma electrónica para realização de operações de compra e vendas de valores mobiliários e instrumentos derivados. É supervisionada pela CMC, tem o poder de elaborar regras sobre as operações de MVM e criar mercados. A publicação das regras e implementação dependem da aprovação da CMC. 
+[Heading 3] Funcionamento do Mercado 
+[Normal] O MVM é um conjunto de instituições e instrumentos que possibilitam a transferência de recursos, de forma eficiente, entre os tomadores (empresas) e os investidores. O MVM é um subconjunto do mercado de capitais, é a operação efectuada na BODIVA. 
+[Normal] As transacções no MVM pode ser ocorrer em mercado primário e secundário:
+[Normal] O mercado primário: é onde os valores mobiliários são negociados pela primeira vez, ou seja, os investidores compram directamente da empresa emitente através de intermediários financeiros. 
+[Normal] O mercado secundário: onde transaccionados os títulos ou valores mobiliários previamente negociados no mercado primário, ou seja, os investidores negociemos títulos entre si.
+[Heading 3] Vantagens do MVM na economia do país.
+[List Paragraph] Diversificação de negócio.
+[List Paragraph] Oportunidade de financiamento.
+[List Paragraph] Produção de informação.
+[List Paragraph] Atracção de capital externo.
+[List Paragraph] Oportunidades de investimento.
+[List Paragraph] Liquidez de activos 
+[List Paragraph] Protecção de carreira de crédito
+[Normal] Os principais instrumentos do mercado de capitais em Angola disponíveis incluem os títulos de dívida pública (bilhetes e obrigações de tesouros), acções, obrigações corporativas, unidades de participação em fundos. 
+[Heading 3] Participantes 
+[Normal] O mercado conta com diversos intervenientes como correctoras, distribuidoras, bancos, Sociedades Gestoras de Organismos de Investimentos Colectivos (SGOIC), auditores externos, investidores, emitentes, BODIVA, consultores de investimentos, analistas financeiros entre outros.
+[Heading 3] Perspectiva do Emitente 
+[Normal] O Estado e as empresam podem emitir valores mobiliários: 
+[List Paragraph] Títulos de tesouros 
+[List Paragraph] Acções (abertura do capital da empresa)
+[List Paragraph] Obrigações 
+[Normal] Os outros veículos de investimentos, por exemplo, organismos de investimentos, canalizam as poupanças de investidores para a execução de um projecto. 
+[Heading 3] Perspectiva do Investidor 
+[Normal] Quem tem poupanças, pode aplicar nos instrumentos financeiros disponíveis no MVM, de acordo ao investimento realizado receberá um juro e/ou dividendos.
+[Heading 3] Crescimento do Mercado de capitais em Angola 
+[Normal] Segundo a Revista de 2026 do Mercado de capitais da BODIVA e os relatórios contas anuais da CMC de 2021 a 2024, o mercado de capitais angolano apresentou um crescimento e amadurecimento, especialmente ao longo do ano de 2025, consolidando-se como um instrumento estruturante para o financiamento da economia. De acordo com esses documentos, os indicadores de 2025 evidenciam uma ampliação consistente das oportunidades de investimento, impulsionadas pela solidez das empresas nacionais e pelo aumento de participação dos investidores. 
+[Normal] Em 2025, realizou-se a maior oferta pública de sempre em Angola, com a venda de 29,75% do capital do Banco Fomento Angola (BFA), captando cerca de 242 milhões de dólares e atraindo mais de 8 mil investidores diferentes dos outros anos. 
+[Normal] Nesse período todo, o mercado angolano de acções começou a contar com cinco empresas cotadas, incluindo o BAI, o BFA, Banco Caixa Geral Angola (BCGA), a ENSA e a própria BODIVA. O programa de privatizações tem sido um grande um motor de relevância da BODIVA, permitindo a entrada de novos emitentes e a consolidação do mercado.
+[Normal] No dia 1 de julho de 2025, registou-se um recorde histórico de montante negociado numa única sessão, atingindo 291, 91 mil milhões de dólares, um crescimento de 133% face ao recorde anterior de 2022. O mercado accionista atingiu uma capitalização de cerca de 4,17 bilhões de Kwanzas no final de 2025, representando um aumento expressivo de 198% em relação ao período homólogo. 
+[Normal] Eis o gráfico que mostra o crescimento do mercado quanto o volume de negócios e capitalização. 
+[Normal] Figura 1: Elaborada por mim com base nos dados da BODIVA e CMC.
+[Normal] Apesar do recorde de 1 de junho, o crescimento do mercado quanto ao volume de negócio foi mais acentuado em 2023, tendo como pico no valor de 7, 65 bilhões. Já a capitalização obteve um crescimento exponencial de 2021 a 2025 por causa da oferta do BFA. 
+[Normal] O número de contas de registo individualizado na Central de Valores Mobiliários (CEVAMA), cresceu a 36,30% totalizando 47778 contas activas no final de 2025. Apenas em 2025, foram abertas 12931 novas contas, um aumento de 69,65% face a 2024, impulsionado pela OPV (Oferta Pública de Venda) do BFA. 
+[Normal] O montante total de valores sob custódia subiu 17,14 bilhões de kwanzas, um crescimento de 44,99%, comparativamente ao ano anterior. 
+[Normal] Eis o gráfico que mostra o crescimento do mercado de capitais quanto ao número de investidores com base nos dados da BODIVA e CMC. 
+[Normal] Figura 2: Crescimento do número de investidores do mercado. Autor: António. Fonte: Excel
+[Normal] Diferentes de outros anos, o ano de 2025 foi considerado o ano da aceleração dos Fundos de Investimentos Mobiliários (FIM) em Angola, com montante sob gestão a crescer mais de 67%. A participação destes fundos negociações da BODIVA quintuplicou, confirmando o seu papel na mobilização das poupanças das famílias e do investimento. 
+[Normal] Eis o gráfico da quantidade de transacções que é o indicador que melhor demonstra a democratização e aumento de interesse do investidor de retalho. 
+[Normal] Figura 3: Crescimento da Quantidade de transacções. Autor: António. Fonte: Excel
+[Normal] No mesmo gráfico também observamos que há um crescimento maior no ano de 2025, isso foi por causa do aumento da OPV do BFA. 
+[Normal] Com base nos dados da BODIVA e CMC, o mercado angolano manteve uma taxa anual de crescimento de 61,56% nos últimos oito anos. 
+[Normal] O mercado está focado na inovação e digitalização, com objectivo de tornar o sistema mais eficiente e transparente. As prioridades incluem a implementação de uma contraparte central, o lançamento de uma bolsa de mercadorias e a criação de um índice de bolsista para servir de benchmark para investidores. Além disso, defende-se uma maior flexibilização para atrair investidores estrangeiros, visando aumentar a liquidez e a profundidade do mercado nacional. 
+[Heading 2] Instrumentos Financeiros 
+[Heading 3] Acções. 
+[Normal] Acções representam uma parcela do capital próprio de uma empresa e conferem ao de detentor a qualidade de accionista, tornando-o proprietário de uma parte da sociedade proporcionalmente à qualidade de títulos que a detém. 
+[Normal] Em Angola, as acções são classificadas principalmente pelos direitos que conferem os seus titulares e pela sua forma de representação e registo. 
+[Normal] Classificação quanto aos Direitos. 
+[Normal] Acções Ordinárias: são o tipo mais comum e representativo do mercado angolano. Conferem ao investidor (accionista) o direito de participar nas decisões da empresa através de voto em Assembleias gerais, além do direito a receber dividendo proporcionalmente aos resultados da sociedade. O glossário da CMC define accionista como titular de acções ordinárias. 
+[Normal] Acções Preferenciais: Estas são caracterizadas por conferirem prioridade pagamento de dividendos e no pagamento do reembolso do capital em caso de liquidação da empresa, geralmente não direito de voto. 
+[Normal] Classificação quanto à forma de Representação e de Registo. 
+[Normal] Acções Estruturais: são acções que não possuem uma representação física em papel. A sua existência e a posse são comprovadas apenas por registo electrónico em contas de custódia junto de instituições financeiras e na Central de Valores Mobiliários (CEVAMA). 
+[Normal] Acções Normativas: são aquelas cuja a identidade do detetor está devidamente inscrito no registo da sociedade emitente. 
+[Heading 2] Base de Dados 
+[Normal] Após uma apresentação de conceitos e definições que englobam a conceptualização e contextualização teórica do projecto, surge a necessidade de apresentar conceitos e definições que fizeram parte daquilo que foi a implementação prática do projecto. 
+[Normal] Para uma maior compreensão eficaz do conceito de base de dados é crucial entender a diferença entre conceito de dados e informação. Dados são factos brutos, registos e símbolos que ainda foram não interpretados e organizados, eles precisam ser organizados e processados para que tenham um significado. Já a informação é o resultado do processamento e a organização dos dados para que possuam significado e sejam úteis para o utilizador final, a informação permite a tomada de decisão desses dados estruturados e organizados. (Silberschatz, Korth & Sudarshan, 2020).
+[Normal] Agora que conseguimos a fazer a distinção do conceito de dados e informações, podemos entender o que é exactamente uma base de dados. Base de dados são colecções de dados armazenados e inter-relacionados, que atende às necessidades de vários usuários de uma ou mais organizações, ou seja, colecções inter-relacionados de muitos tipos diferentes de tabelas. (Teokey et al., 2007, p. 2). 
+[Normal] Podemos também entender base de dados como colecção de dados inter-relacionados contém informações relevantes de uma empresa ou organização. As bases de dados são usadas para gerir grandes volumes de dados, essa gestão envolve muitas das vezes a definição de estruturas para o armazenamento quanto o fornecimento de mecanismos para manipulação desses mesmos dados, segundo Silberschatz, Korth & Sudarshan (2020). 
+[Normal] As bases de dados podem conter informações relacionadas ao mundo real, por exemplo, lojas, escritórios, bibliotecas ou banco. Essa mesma base possui coerência lógica entre os dados e possui também significado.
+[Normal] Actualmente, as bases de dados são componentes essenciais practicamente de todas grandes empresas, sistemas, aplicativos e de grande parte de todas actividades diárias das pessoas, sendo usadas sempre que faz uma pesquisa na web, uma compra online ou se faz o uso de um telemóvel, Elmasri e Navathe, 2011.
+[Heading 2] Sistema de Gestão de Base de dados (SGBD)
+[Normal] Segundo Date (2004), um sistema de gestão de base de dados é um software genérico que manipula base de dados, permite a definição, construção e a gestão de uma base de dados para diversas aplicações. Um SGBD possui uma visão lógica do projecto da base de dados, uma linguagem de definição de dados, uma linguagem de manipulação de dados e utilitários importantes. 
+[Normal] O Sistema de gestão de base de dados actua como uma camada intermediária entre usuário e base de dados, oferecendo ferramentas para a definição, consulta, actualização e a administração das informações, garantindo que os dados sejam acessados de forma segura, eficiente e com controlo de concorrência, de acordo Elmasri e Navathe (2011).
+[Normal] O SGBG possui uma característica central que é uma visão abstracta dos dados para os usuários. Isso significa que o sistema esconde os detalhes complexos sobre como os dados são fisicamente armazenados e mantidos, permitindo que programadores e os usuários foquem na lógica da informação. Ele deve garantir a segurança dos dados armazenados, protegendo-os contra as falhas do sistema ou acesso não autorizados, além disso, ela garante que se os dados forem acessados ou compartilhados por vários usuários, o sistema deve evitar resultados anómalos ou inconsistentes, de acordo com Silberschatz, Korth & Sudarshan (2020).
+[Normal] Na práctica, o sistema é um software complexo e grande cuja a tarefa é gerir as colecções de dados igualmente grande e complexos permitindo que as empresas e usuários interajam com os dados de forma organizada e segura. 
+[Heading 3] Tipo de Sistema de Gestão de Base de dados 
+[Normal] Segundo Silberschatz, Korth & Sudarshan (2020), o sistema de gestão de base de dados classifica-se em: 
+[Normal] Classificação por Arquitectura de Sistema 
+[Normal] SGBD Centralizados: Ocorrem num único sistema informático, desde os dispositivos móveis a grandes servidores com múltiplos processadores e memórias partilhadas. Um SGBD centralizado desdobra-se num único sistema físico, mesmo que múltiplos utilizadores acedam ao sistema remotamente através de uma rede, o processamento das consultas e armazenamento dos dados ocorrem estritamente num único nó central, Elmasri e Navathe (2011). 
+[Normal] SGBD Distribuídos: Permitem o armazenamento de dados e processamento de consultas em múltiplas máquinas que podem estar separadas geograficamente. Os dados estão fisicamente armazenados em múltiplos computadores interconectados por uma rede de comunicação, apesar da distribuição física, o sistema apresenta-se ao usuário como um único banco de dados lógico e centralizado. Os usuários realizam transacções que podem aceder dados em diferentes sites sem precisar saber onde estão localizados, Date (2004). 
+[Normal] SGBD Paralelo: Projectado para correr em clusters de várias máquinas, distribuindo os dados e processando consultas em paralelo para lidar com volumes massivos de informações e alta velocidade de processamento. O objectivo desse sistema é alcançar o ganho de velocidade e de escala, permitindo que consultas complexas ou grandes volumes de transacções sejam processados de forma rápida e eficiente, Silverschatz, Korth & Subarshan (2020).
+[Normal] Classificação por Modelo de Dados 
+[Normal] SGBD Relacionais: São os mais usados hoje em dia, organizam dados em tabelas (relações). A grande vantagem do sistema relacional reside na sua simplicidade lógica, permite que desenvolvedores e usuários operem em ambiente abstracto e lógico, sem precisar se preocupar com a forma como os dados estão armazenados nos disco, Rob & Coronel (2010). O sistema relacional é composto por tabela (relações), tupla (registo) e coluna (atributo/ campo). Exemplos de Sistema de relacional MySQL, PostgreSQL, Oracle, IBM DB2 e Microsoft SQL Server. 
+[Normal] SGBD NoSQL: Surgiram para dar maior flexibilidade e escalabilidade para aplicações web e de Big Data, frequentemente abdicam algumas propriedades de ACID (especialmente a consistência estrita) em favor a velocidade e a disponibilidade. Um conceito central de NoSQL é a agregação, que é uma colecção de dados com estrutura complexa, manipulada com uma unidade. Esse agregado serve simultaneamente como uma unidade de recuperação de dados e uma unidade de actualização atómica, Parlavantzs (n.d., p.12).
+[Normal]  Eis alguns exemplos de NoSQL: MongoDB, Cassandra, CouchBase, HBase, FlockDB. 
+[Normal] SGBD de Grafos: Especializados na gestão de dados com ligações complexas entre pessoas ou objectos, que não se ajustam ao formato tabular de linha e colunas (como as redes sociais). Esse tipo de sistema é focado em processamento de dados altamente conectados, flexibilidade nos modelos de dados usados pelos grafos, melhor desempenho de leituras locais, fazendo uma travessia nos grafos, Pokorný (2015).
+[Normal (Web)] Os bancos de dados em grafo destacam-se pela eficiência nas consultas de conexões entre nós. As conexões de primeiro grau são mais simples de processar, enquanto as de segundo grau podem apresentar maior complexidade devido à grande quantidade de relações entre os nós (MEYER et al., 2019). Nesse modelo, as informações são armazenadas em nós e ligações estruturadas por sujeito, predicado e objeto, permitindo representar relações entre entidades.
+[Normal (Web)] Segundo YANG e YAO (2019), as consultas em SGBDs em grafo, como o LIquid, baseiam-se na satisfação de condições, em que são definidas regras que devem ser obedecidas por nós e arestas para recuperar as informações desejadas.
+[Normal (Web)] As consultas utilizam uma notação semelhante ao Datalog (Algoritmo 3.3, p.20). Essas consultas são trazidas para um grafo de restrições e mapeadas para uma estrutura de chamada hydra (uma coluna onde são listados os possíveis valores). A verificação consiste em iterar sobre as conexões de um nó até encontrar uma relação do tipo procurado. 
+[Normal (Web)] SGBD Objecto-Relacional: Estendem o modelo relacional permitindo o tipo de dados mais complexos (como listas e colunas) e conceito de orientação a objecto (como herança). Esse tipo de sistema surge da combinação de melhores características do modelo relacional com o paradigma orientação objectos, resultando de uma extensão do BDR capaz de tratar tipos de dados complexos, considerado mais eficiente e inteligível (Blaha, Rombaugh, 2006). 
+[Normal (Web)] Conforme o Elmasri e Navathe (2005), os principais elementos que podem ser definidos num SGBD Objecto-Relacional são: tabelas alinhadas (Nested tables), tipos definidos pelos utilizadores (User de definited types), relacionamentos usando referências (REF), identificadores de objectos (OID), colecções (array, Multiset), métodos, herança. 
+[Normal (Web)] O SGBD Objecto-Relacional são adequados para aplicações que envolvem estruturas complexas e persistências de objectos, tais como: 
+[Normal (Web)] Sistema de Informação Geográfica 
+[Normal (Web)] Aplicações para engenharias 
+[Normal (Web)] Sistemas multimédias 
+[Normal (Web)] Diagnósticos por imagem na medicina (ortopedia, ortomolecular).
+[Normal (Web)] Esse sistema apresenta uma vantagem com base nos seus recursos, como a representação de objectos em bancos de dados, herança, uso de referência, tipos de dados complexos e colecções, permitindo que o mapeamento dos objectos da aplicação para os objectos da base de dados seja feito de forma natural. 
+[Normal (Web)] Classificação de SGBD por Cenário de Uso 
+[Normal (Web)] SGBD em Memória Principal (RAM): optimizados para bases de dados que cabem inteiramente na memória RAM, proporcionando acessos extremamente rápidos. Os dados nesse sistema mantêm permanentemente e primariamente na RAM, esse mesmo sistema optimiza o acesso aos dados à memória principal (CPU, caches e paralelismo) e possuem gerenciador de buffer (Faerber et al., 20217; Harder e Reuter, 1983). Esses sistemas apresentam uma vantagem em armazenar dados directamente na memória RAM e também desvantagem no quesito volatilidade, pois tornam esses sistemas sensíveis a falhas Magalhães, Brayner e Monteiro (s.d). 
+[Normal (Web)] SGBD Embutidos: são ligados directamente a uma aplicação, geralmente em sistema de utilizador único, e podem nem suportar SQL, oferecendo apenas uma API de acessos aos dados. Esses sistemas apresentam uma diferença em relação em aos tradicionais (como servidores de bases de dados), pois não oferecem acessibilidade aos dados excepto através da aplicação. 
+[Normal (Web)] O sistema não funciona com um servidor separado, mas sim como uma parte da aplicação, as bases dados são mantidos para suas próprias necessidades internas, sem expor acesso directo a outros sistemas. São acessíveis vias API da linguagem de programação, sem necessidade de protocolos de rede como JDBC/ODBC para comunicação com um servidor remoto Silverschatz, Korth & Sudarshan (2020). Eis alguns exemplos desses sistemas: JavaDB, SQLite, HSQLDB e Derby. 
+[Normal (Web)] Servidores Transacções e Servidores de Dados
+[Normal (Web)] O servidor de transacções é responsável por executar as consultas e gerir as operações transacionais. Ela processa as requisições dos clientes pelo front-end da aplicação e retorna os resultados, Takai, Italiano, Ferreira (2005). As principais características incluem:
+[Normal (Web)] Centralização de processamento de transacções (início, commit, rollback);
+[Normal (Web)] Controlo de ocorrência e recuperação de falhas;
+[Normal (Web)] Execução de procedimentos de armazenados e gatilhos; 
+[Normal (Web)] Comunicação com clientes por meio de uma linguagem padrão (Ex.:SQL);
+[Normal (Web)] Os servidores de dados referem-se aos repositórios que armazenam e gerem os dados persistentes. Esse tipo de servidor corresponde à máquina (back-end) que hospeda SGBD e os arquivos de base de dados, pode ser acedido por vários clientes simultaneamente, garantindo assim independência dos dados, segurança e integridades dos dados Takai, Italiano, Ferreira (2005). Os servidores de dados podem ser, na prática, servidores de transacções quando se trata de ambiente de ambiente relacional, mas o termo pode se referir a servidores de arquivos ou servidores dedicados a outras formas de armazenamento. 
+[Heading 3] Conceitos de Chaves 
+[Normal] Superchave (Superkey)
+[Normal] No modelo relacional, superchave é um conjunto de atributo de uma relação que possui propriedade de que, em qualquer estado válido da relação, não existem tuplas distintas com a mesma combinação de valores para esses atributos. 
+[Normal] Isso quer dizer que em uma relação R, uma superchave SK especifica uma restrição de unicidade, na qual duas tuplas distintas, em qualquer estado de r de R, não pode existir o mesmo valor de SK. Em toda relação tem, pelo menos, uma superchave por padrão Elmasri e Navathe (2005). 
+[Normal] Chave (Key)
+[Normal] Uma chave é uma superchave mínima, ou seja, uma superchave da qual não se pode remover um atributo sem perder a propriedade unicidade. 
+[Normal] Em uma relação R, se o K for uma chave do esquema da relação também será considerada como uma superchave desta mesma relação, propriedade adicional de, ao qualquer remover um atributo A de K, o conjunto de atributos de K restante não será mais uma superchave de R, Elmasri e Navathe (2005). 
+[Normal] Assim, uma chave satisfaz duas condições:
+[Normal] Unicidade: duas tuplas distintas não podem ter o mesmo valor para todos os atributos da chave.
+[Normal] Minimalidade:  nenhum subconjunto próprio da chave tem a propriedade de unicidade. 
+[Normal] Chave Candidata (Candidate Key)
+[Normal] Quando um esquema de relação possui mais de uma chave, cada uma delas é chamada de chave candidata. Um esquema de uma relação pode existir mais de uma chave, cada uma dessas chaves é denominado de chave candidata Elmasri e Navathe (2005). Segundo Silverschatz et al. (2020), uma chave candidata corresponde a uma superchave mínima. 
+[Normal] Exemplo: Se a combinação de {nome, depart_nome} for suficiente para distinguir uma relação de instructor (assumindo que não dois homónimos no mesmo departamento) o Id e {nome, depart_nome} são denominados de chaves candidatas. Tendo em conta de que o {Id, nome} não serão considerados porque Id já é uma superchave da relação. 
+[Normal] Chave Primária (Primary Key)
+[Normal] É uma chave candidata escolhida pelo desenvolvedor da base de dados para identificar de forma única cada tupla. A escolha recai normalmente sobre a chave o menor número de atributo. A indicação no modelo de qual chave candidata é a chave primária é realizada sublinhando os atributos que formam a chave candidata escolhida Takai et al. (2005). 
+[Normal] Característica: Deve ser estável (não muda ao longo do tempo) e não deve ser nula. 
+[Normal] Exemplo: Numa tabela de instructor, o atributo Id será tipicamente uma chave primária, pois é único e imutável. 
+[Normal] Chave estrangeira (Foreign Key)
+[Normal] É um conjunto de atributos de uma relação (referente) cujo os valores devem corresponder aos valores de uma chave primária (ou uma superchave) da outra relação referenciada. Ela estabelece o vínculo entre duas tabelas Silverschatz et al. (2020). 
+[Normal] Objectivo: Ela garante a integridade referencial, ou seja, não permite que um valor apareça na chave primária da relação estrangeira se ele não existir na chave primária da relação referenciada. 
+[Normal] Exemplo: Tendo em conta que exista duas relações curso e departamento, e relação departamento possui uma chave primária que é depart_nome, essa mesma chave seria chave estrangeira relação curso. Querendo dizer que cada curso está vinculado ao um departamento. 
+[Normal] Integridade de entidade
+[Normal] Nenhum valor de uma chave primária deve se nulo. A integridade de entidade estabelece que não pode existir valor de chave primária nulo, porque o valor da chave primária é usado representar as tuplas individuais de uma relação Elmasri e Navathe (2005).
+[Normal] Integridade Referencial
+[Normal]  A restrição de integridade referencial afirma que uma tupla em uma relação que faz referência a outra, deve se referir a uma tupla existente nessa relação Elmasri e Navathe (2005). 
+[Heading 3] Linguagem SQL 
+[Normal] A SQL (Structured Query Language) é uma linhagem padrão para bases de dados relacionais. Sua origem remonta ao sistema experimental de System R IBM Rearch (1970), onde foi inicialmente chamada de SEQUEL (Structured English Query Language). A SQL tornou-se padrão ANSI e ISO, garantindo a portalidade de diferentes SGBDs relacionais. 
+[Normal] É uma linguagem padrão de consulta comercial que usa uma combinação de construtores de Álgebra e Cálculo Relacional. Ela possui as seguintes partes: Linguagem de Definição de Dados (DDL), Linguagem de Manipulação de Dados (DML), segurança, integridade, visões, autorização e controlo de transacções Takai et al. (2005). 
+[Normal] Segundo Elmasri e Navathe (2005), a linguagem SQL é uma das maiores razões do sucesso das bases de dados relacionais no mundo comercial. Como se tornou padrão para as bases de dados relacionais, os usuários têm poucas preocupações de migrar as suas aplicações de bases de dados. 
+[Normal] Na linguagem SQL, o DDL executa as funções como definir, alterar e excluir esquemas das relações usando os seguintes comandos: create table, alter table e drop table. O DML executa as funcionas como inserir, consultar, modificar e eliminar dados da tabela, usando os seguintes comandos: select, delete, insert e update. A integridade especifica e impõe as restrições sobre os dados usando os comandos primary key, foreign key, not null e check.
+[Normal] Visões são usadas para criar relações virtuais (visões) a partir de consultas, usando o comando create view. Controlo de transacções executar operações em unidades   atômicas (propriedades ACID – Atomicidade, Consistência, Integridade, Durabilidade) usando comando commit e rollback.  Autorização controlar o privilégio de acesso a relações e visões, usando os comandos: grant e revoke Silverschatz et al. (2020).
+[Normal] SQL Embarcado e Dinâmico. 
+[Normal] SQL embarcado as instruções SQL são misturadas aos códigos da linguagem hospedeira, processadas por pré-compilador. Já o SQL dinâmico permite construir e executar consultas em tempo de execução, utilizando APIs como JDBC e ODBC Silverschatz et al. (2020).
+[Normal] A linguagem SQL se estabeleceu com uma linguagem padrão para as bases dados relacionais. Essa sua abrangência cobre desde a definição de esquemas até o controlo de transacções e a segurança dos dados. SQL tornou-se uma ferramenta completa e robusta para administração e manipulação de dados. 
+[Heading 4] MySQL 
+[Normal] O MySQL surgiu a partir da necessidade de usar o mSQL para conectar tabelas om rotinas ISAM próprias, mas, após os testes, conclui-se que o mSQL era rápido nem o flexível o suficiente. Desenvolveu-se então nova uma interface SQL, mantendo a compactibilidade com a API do mSQL para facilitar a portabilidade com os códigos de terceiros (MYQSL AB, 2006). 
+[Normal] O MySQL é um sistema de gestão de base de dados relacional, multi-tarefa e multi-usuário, extremamente rápido, confiável e fácil de usar. Opera no modelo cliente/servidor e está disponível sobre licença dupla: GNU General Licence Public (GPL) ou Licença Padrão Comercial MYSQL AB (2006). 
+[Normal] É um software Open Source o que significa que qualquer um pode usá-lo, modifica-lo e distribuí-lo gratuitamente, respeitando as regras de GPL MYSQL AB (2006). Foi desenvolvida pela empresa MYSQL AB na Suécia por David Axmark, Allan Larsson e Michel “Monty” Widenius, que foi adquirida posteriormente pela Sun Microsystems em 2008, actualmente o MySQL encontra-se sob a tutela da Oracle Corporation que adquiriu a Sun Microsystems. 
+[Normal] O MySQL apresenta características que ajudam no seu uso, entre elas como a segurança, a conectividade (via TCP/IP), APIs (disponível para linguagens como Java, Python, Ruby, C++ entre outros), portabilidade (usado em diversos compiladores e sistemas operacionais MYSQL AB (2006).  Tornando assim uma das ferramentas de sistema de gestão de base de dados mais usado actualmente. 
+[Heading 2] Linguagem de Programação 
+[Normal] As linguagens de programação servem como um veículo para expressão e comunicação de ideias, não apenas entre humanos e computadores, mas também entre os próprios desenvolvedores, assemelhando-se as linguagens naturais Tucker e Noonan (2010). 
+[Normal] As linguagens de programação surgiram da evolução da lógica matemática, abstraindo conceitos complexos de matemática para serem utilizadas na resolução de problemas específicos. As linguagens de programação eram códigos matemáticos especializados para aplicações particulares Bertonili et al. (2019). 
+[Normal] Uma linguagem de programação é um sistema composto por regras sintáticas e semânticas que permitem aos desenvolvedores comunicarem instrucções a um computador, com objectivo de resolver problemas, processar dados e automatizar tarefas.  Uma linguagem de programação é concebida para facilitar, de forma precisa e inequívoca, a comunicação de ideias computacionais, assim sendo, o propósito central da linguagem de programação é servir como uma ferramenta de modelagem e automação de processos, permitindo que um problema do mundo real seja traduzido numa sequência de instrucções que um computador possa executar Tucker e Noonan (2010). 
+[Normal] Uma linguagem de programação apresenta dois conceitos fundamentais que são sintaxe e semântica. Bertonili et al. (2019) afirma “Sintaxe corresponde a maneira como uma sentença está escrita e semântica corresponde ao significado da sentença”. Em programação, sintaxe refere-se a forma correcta de escrever os comandos de acordo com as regras da linguagem, enquanto a semântica refere-se ao significado dos comandos. Um programa pode estar bem escrito (portanto, ser executável), mas apresentar erros semânticos, ou seja, incorrectos ou indesejados. 
+[Normal] Dois grandes níveis são apresentados no contexto de linguagem de programação que são linguagem de baixo nível e linguagem de alto nível. 
+[Normal] Linguagem de baixo de Nível (Ex.: Assembly): exigem que os desenvolvedores conheçam a linguagem de máquina (CPU) para utilizá-las. Conforme Bertonili et al. (2019, p.13), actualmente o Assembly é usado “para manipulação de directa de hardware e de sistema que necessitam de performance crítica como sistemas de tempo real e sistemas embarcados”. 
+[Normal] Linguagem de Alto de Nível (Ex.: C, Java e Python): possuem maior abstracção, ou seja, um único em alto nível equivale vários comandos de baixo nível. Uma linguagem de programação de dinâmica alto nível é aquela “cujas as variáveis podem receber qualquer tipo de dados e sua sintaxe se aproxima mais da linguagem da humana do que da linguagem máquina” (Costa Filho et al., 2023, p.14). Essa definição ressalta dois aspectos fundamentais que são Flexibilidade no tratamento de dado e legibilidade do código, características essenciais para produtividade no desenvolvimento de software. 
+[Normal] Quatros paradigmas são identificados por Tucker e Noonan (2010), que refletem diferentes necessidades computacionais e estilos de resolução de problemas que persistem e se adaptam aos tempos actuais. 
+[Normal] Programação imperativa: baseiam-se numa sequência de instruções que alteram o estado do programa através de atribuições, ciclos e condicionais. É um dos paradigmas mais antigo e serve de base para o pensamento algorítmico, as linguagens C, Java, e Python suportam esse paradigma e são amplamente usados no desenvolvimento de sistemas e aplicações. 
+[Normal] Programação Orientada a Objecto: organiza o software em objectos que interagem entre si, usando conceitos de herança, encapsulamento, e polimorfismo, facilitando a manutenção e reutilização dos códigos em sistemas complexos. As linguagens Java, C#, Pyrhon e Swift são exemplos desse paradigma. 
+[Normal] Programação Funcional: encarna a computação como avaliação de funções matemáticas, privilegiando a imutabilidade dos dados e ausência dos efeitos colaterais. Contribui para criação de software mais robusto e adequado à programação concorrente, as linguagens Haskell, Scalla, Elixir, F# e Python suportam este paradigma. 
+[Normal] Programação Lógica: baseiam-se na definição de factos e regras que descrevem o problema, permitindo que o sistema determine a solução por meio de inferência lógica, usado em sistemas especialistas e inteligência artificiais. Linguagens como SQL e Prolog suportam esse paradigma. 
+[Normal] Segundo Tucker e Noonan (2010), a programação orientada a objecto é essencial para aplicações web, móveis e interfaces gráficas, permitindo que os sistemas reajam às acções dos utilizadores em tempo real. As tecnologias como JavaScript, React, Flutter e .NET baseiam-se amplamente nesse modelo. 
+[Normal] A programação Concorrente tornou-se essencial devido a popularização dos processadores multi-core, dos sistemas distribuídos e dos sistemas web de larga escala. A sua utilização permite executar múltiplas tarefas simultaneamente, aumentando o desempenho das aplicações e eficiência. 
+[Normal] Por sua vez, Correcção de programa assume um papel cada mais em sistemas críticos como sistemas médicos, sistemas aeronáuticos e aplicações de blockchain, contribuindo para a fiabilidade, segurança e qualidade de software. 
+[Normal] As linguagens de programação são mais do que ferramentas técnicas, representam formas de pensar e de resolver problemas computacionais. Conceitos como abstracção, sintaxe, semântica, tipos de dados e paradigmas de programação continuam fundamentais para desenvolvimento do software moderno Tucker e Noonam (2010). 
+[Normal] A compreensão de diferentes paradigmas permite seleccionar a abordagem mais adequada para cada problema, tornando os profissionais mais preparados para acompanhar a evolução tecnológica e adaptar-se a novas linguagens e metodologias.
+[Heading 3] HMTL 
+[Normal] HTML (Hipertext Mark Language) consiste numa linguagem de formatação texto que possibilidade a construção (programação/formatização) de ficheiros de texto, com a extensão html, que contêm pequenas marcas (tags) que indicam ao web browser como apresentar o conteúdo incluído ou referenciado no documento Neves (2004). 
+[Normal] A linguagem HTML possibilita a interligação entre páginas webs criando documentos com conceito hipertexto Pedroso et al. (2007). 
+[Normal] A estrutura desse mesma linguagem é composta por uma tag exterior <html> que engloba o cabeçalho e o corpo do documento. O cabeçalho e corpo são representados pelas tags <head> e <body> respectivamente. No cabeçalho é incluído o título e outros parâmetros a passar ao browser, enquanto que no corpo é incluído o texto e marcas de controlo que indicam ao browser como proceder a apresentação Neves (2004). Actualmente em HTML 5 a estrutura começa uma marca do tipo <!DOCTYPE html> que indica ao navegador qual especificação usar e a seguir vem a estrutura <html> Eis e Ferreira (2012, p. 31-33). 
+[Normal] A linguagem apresenta as seguintes características: 
+[Normal] O Documento HTML são arquivos de texto escrito em ASCII, o HTML não faz diferença entre letras maiúsculas e letras minúsculas em suas marcações, ou seja, não é case sensitive. Quando o navegador não entende uma marcação, ele a ignora. Os arquivos em HTML podem possuir extensões do tipo .html e .htm Pedroso et al. (2007). 
+[Normal] Essas características que autor acima apresentou algumas delas continuam válidas e outra foi descontinuada como é o caso dos textos escritos em ASCII que mudou para UTF-8 que permite escrever os caracteres de practicamente em todos os idiomas, incluído os acentos em português Eis e Ferreira (2012).
+[Normal] O HTML constitui um base fundamental das aplicações web, sendo responsável pela estruturação e significado da informação disponibilizada na web. Segundo Eis e ferreira (2012), HTML garante que os conteúdos sejam semanticamente organizados, reutilizáveis e acessíveis em diferentes dispositivos e plataformas. 
+[Normal] Com actualização para HTML 5, a linguagem passou a oferecer recursos avançados que possibilitam a criação de aplicações web mais interactivas e eficientes. Funcionalidades como áudio e vídeo nativos, gráficos através canva e SVG, armazenamento local, geolocalização suporte a aplicações offline reduziram a dependência de plugins externos e melhoraram a interoperabilidade entre navegadores. Dessa forma, HTML 5 consolidou-se como uma linguagem de marcação para o desenvolvimento de aplicações web modernas e sofisticadas (Eis e Ferreira, 2012).
+[Heading 3] CSS
+[Normal] CSS (Cascading Styles Sheets) trata-se de uma linguagem de estilos que define o layout do documento HTML, controlando os aspectos como fontes, cores, linhas, alturas, margens, imagens de fundo, larguras, posicionamento e outras características visuais Oliveira et al. (s.d). 
+[Normal] O CSS foi criado solucionar a situação em que as tags HTML originais (estruturais) estavam sendo usada indevidamente para fins de layout, e cada navegador inventavas suas próprias tags. Assim sendo, CSS veio para dar suporte aos designers web de layout sofisticados e suportados pelos navegadores. Powell (2010) “as regras CSS são definidas como um nome de propriedade seguidas por dois pontos (:) e então um valor de propriedade”. 
+[Normal] Essas regras são agrupadas em blocos que especificam comos os elementos de uma página devem ser apresentados separado a estrutura do documento (definida pelo HTML). 
+[Normal] O CSS é uma linguagem utlizada para fazer apresentação visual da página web, provendo a separação entre a estrutura do conteúdo, representada pelo HTML, e o seu aspecto visual. Essa característica permite a manutenção, reutilização e organização do código, permitindo alterar o design sem mudar o conteúdo da página (Powell, 2010). 
+[Normal] Além disso, o CSS utiliza um mecanismo de cascata e de herança para aplicar estilos de forma eficiente e oferece uma ampla variedade de selectores e propriedades para controlar aparência dos elementos. O seu suporte a diferentes tipo de mídia, como computadores, dispositivos móveis e impressoras, possibilita a criação de interfaces adaptáveis e responsivas, melhorando a experiência do utilizador (Powell, 2010). 
+[Heading 3] JavaScript 
+[Normal] JavaScript é uma linguagem de programação utilizada para construir páginas dinâmicas e interativas, o seu foco principal é implementar o comportamento ou a inteligência a páginas web (K19 Treinamentos, 2013). Diferente de HTML (conteúdo), CSS (formatação), o JavaScript é uma comada que permite a programação propriamente dita no ambiente do navegador. 
+[Normal] De acordo Mozilla Fundation (s.d), JavaScript é uma linguagem de programação leve, interpretada e orientada a objectos com funções de primeira classe, conhecida com linguagem de scripting para páginas web, mas também utilizada em muitos ambientes fora dos navegadores. É uma linguagem de scripting baseadas em protótipos, multi-paradigma e dinâmica, suportando estilos orientados a objectos, imperativo e funcional.
+[Normal] JavaScript roda no client side da web, o que pode ser usado para projectar/ programar comportamentos de uma página web a partir de ocorrência de um evento. É uma linguagem fácil de se aprender, mas que também é poderosa, sendo amplamente usada para controlar o comportamento de páginas web (Mozilla Fundation, s.d).
+[Normal] JavaScript é uma linguagem de programação que oferece suporte a variáveis, objectos, funções, operadores e arrays, permitindo a criação aplicações web interactivas e dinâmicas. Disponibiliza recursos de manipulação de dados e estruturas de programação que facilitam a implementação de diferentes funcionalidades em páginas web. 
+[Normal] Possui a capacidade de interagir directamente com o navegador através de manipulação de DOM (Document Object Model), gestão de eventos e utilização de APIs, como Web Storage, history e geolocalização. Esses recursos permitem modificar os conteúdos em tempo real, armazenar informações localmente e responder as acções de utilizadores de forma eficiente (K19 Treinamentos, 2013). 
+[Normal] JavaScript desempenha fundamental no desenvolvimento web, pois acrescenta funcionalidades que não podem ser implementadas apenas com HTML e CSS. Através dele, é possível criar páginas mais interactivas e dinâmicas, validar formulários, realizar animações e actualizar os conteúdos dinamicamente sem recarregar as páginas.
+[Normal] A linguagem contribui para uma melhor experiência do utilizador ao permitir armazenamento local dos dados, o controlo de navegação e interacção em tempo real com a aplicação web. Dessa maneira, JavaScript tornou-se uma linguagem muito importante no desenvolvimento de aplicações web modernas (K19 Treinamentos, 2013). 
+[Heading 4] React.js
+[Normal] React é uma biblioteca JavaScript popular utlizada para criar interfaces de usuários. Foi desenvolvida no Facebook para enfrentar alguns dos desafios associados em sites de grande escala orientados por dados (large-scale, data-driven website) (Banks & Porcello, 2017). 
+[Normal] Segundo Stefanov (2019), React é uma biblioteca para construção de interface de usuários, ela ajuda o desenvolvedor a criar uma interface de usuário de uma vez por toda. Quando o estado da aplicação mudar, a interface será reconstruída de modo a reagir a alteração. 
+[Normal] React facilita a criação de interface usuário interactivas. Crie visualizações simples de cada estado do seu aplicativo e o React actualizará e renderizará de forma eficiente os componentes quando os seus dados mudarem (React Team, s.d). Os aplicativos React são compostos de componentes. Componente é uma parte da interface do usuário que possui a sua própria lógica e aparência. Os componentes React são funções JavaScript que retornam marcações (React Team, s.d). 
+[Normal] O React é caracterizado por ser uma biblioteca JavaScript baseada em componentes reutilizáveis, quem permitem dividir a interface de aplicação em partes independentes e fáceis de gerir. Os componentes podem receber dados a partir de propridades (props) e manter informações por meio de estado (state), possibilitando actualização dinâmica da interface sempre que os dados são alterados. Disponibiliza um ciclo de vida que permite executar as acções específicas durante a criação, actualização, remoção dos componentes (Stefanov, 2019). 
+[Normal] Outra característica importante é a utilização dos eventos sintéticos, que garantem o comportamento consistente entre diferentes navegadores, e do JSX, extensão JavaScript que facilita a construção de interfaces (Banks & Porcello, 2017). Usa também o DOM virtual, que é uma representação leve do DOM real que permite identificar e aplicar apenas alterações necessárias, contribuindo para um melhor desempenho e uma experiência mais fluida para utilizador (Stefanov, 2019). 
+[Heading 3] Python 
+[Normal] Python é uma linguagem de programação criada pelo matemático e programador Guido van Rossum em 1991. Embora muitas pessoas façam associação da origem com as cobras (pítons), a sua origem deve se ao grupo humorístico Monty Python (Paiva et al., 2019).
+[Normal]   Python é uma linguagem de programação de uso geral, comumente definida como uma linguagem de script orientado a objecto, o que significa que suporta programação orientada a objecto ao mesmo tempo que ela mantem uma orientação geral para tarefas de script (Lutz, 2009).  A linguagem é interpretada, de tipagem dinâmica , possui uma sintaxe simples e legível, projectada para promover produtividade e qualidade de software. 
+[Normal] Segundo Paiva et al. (2019), Python é uma linguagem de alto nível, conhecida por sua simplicidade e legibilidade. Ela possui uma filosofia de simplicidade no seu uso, sendo utilizada muitas vezes como uma linguagem introdutória no ensino de linguagem programação de computadores. 
+[Normal] Ela também é considerada como uma linguagem de programação muito poderosa e fácil de aprender. Possui estruturas de dados de alto nível eficientes e uma abordagem simples mais eficaz para programação orientada a objecto (Van Rossum & Equipa de desenvolvimento do Python, 2018). 
+[Normal] Python destaca-se pela facilidade de aprendizagem, legibilidade, portabilidade, sendo uma linguagem multiplataforma que utiliza indentação para estruturar blocos de códigos. A linguagem possui uma gestão automática de memória através de um colector de lixo e oferece um modo interactivo de facilita o desenvolvimento e testes. 
+[Normal] A linguagem suporte muitos de paradigmas de programação, incluindo os paradigmas de orientação a objecto e funcional, e dispõe de uma ampla biblioteca de módulos de extensão. Utiliza tipagem dinâmica permitindo que os dados sejam definidos automaticamente durante a execução do programa (Paiva et al., 2019). 
+[Normal] Por ser uma linguagem de fácil aprendizagem, simples e rápida no desenvolvimento de aplicações web e não só, isso tem dado destaque ao Python, contruindo para um número crescente de programadores que os usa. O Python é amplamente usado no desenvolvimento de web, ciência de dados e muitas vezes usada com uma linguagem preferencial no ensino de programação. A sua adoção nas universidades internacionais de referência como (MIT, Stanford e Michigan) e sua elevada popularidade entre desenvolvedores tem demostrado a sua importância no contexto tecnológico actual (Paiva et al., 2019). 
+[Heading 4] Django (Python)
+[Normal] Django é um framework do Python desenvolvido em 2005 na empresa World Online, localizada em Lawrence, Kansas. Foi criado para permitir que os jornalistas produzissem conteúdos para web de forma de rápida. O lançamento como código foi oficializado em 2005 (Elman e Lavin, 2015). 
+[Normal] De acordo Brandão (2009, p.13), Django é um framework, construído com a linguagem Python, sendo um framework uma caixa de ferramentas. Django é uma caixa de ferramentas com um manual dentro, onde as ferramentas combinam muito bem umas com as outras. O Django funciona com um conjunto de base de dados (Como MySQL, PostgreSQL, SQLite e outros) e um navegador para virtualização dos resultados. 
+[Normal] Django é um framework da linguagem Python para web com uma arquitectura MTV (Model, Template, View), projecto para receber para requisições HTTP e retornar respostas HTTP. Ela possui uma filosofia de baterias incluídas, ou seja, vem com diversas funcionalidades prontas para desenvolvimento de aplicações web, é um framework bem estruturado, com inúmeras ferramentas integradas (Elman e Lavin, 2015).
+[Normal] Django é um framework que se destaca pela preocupação da segurança, oferecendo mecanismos de protecção contra ataques comuns, como Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF) e SQL injection. Possui uma arquitectura escalável que permite expandir os recursos da aplicação de acordo a necessidade do sistema, aproveitando eficientemente do hardware disponível (Python Academy, s.d). 
+[Normal] Outra característica importante é sua organização baseada na arquitectura MTV, que promove a separação entre dados, apresentação e a lógica de aplicação, facilitando a manutenção e o desenvolvimento de software. A eficiência e a robustez do framework tem se evidenciado pela sua adoção em empresas de grande porte em todo mundo (Python Academy, s.d).
+[Normal] O Django é um framework útil para projectos que exigem muita produtividade no desenvolvimento web. Segundo Python Academy (s.d) e Elman e Lavin (2015), o Django disponibiliza recursos prontos para tarefas comuns, como tratamentos de requisições, acesso a base de dados e gestão de aplicação, permitindo os desenvolvedores concentrarem-se seus esforços na implementação da regra de negócio. Possui uma facilidade no desenvolvimento web e uma capacidade para acelerar a criação de aplicações web. 
+[Normal] O Django permite gera automaticamente um API de acesso aos dados garantindo ao desenvolvedor manipular dados, criar dados, actualizar, ler e excluir os mesmos, sem escrever SQL (Python Academy, s.d). De acordo com Elman e Lavin (2015), o Django possui uma escalabilidade, flexibilidade e um forte ecossistema, evidenciando a sua utilização em projectos de diferentes dimensões e o suporte de uma comunidade ativa. Esses aspectos demonstram que o framework alia robustez técnica, produtividade e capacidade de adaptação, constituindo uma solução adequada para o desenvolvimento de aplicações web modernas. 
+[Heading 2] Linguagem de Modelagem Unificada (UML)
+[Normal] UML (Unified Modeling Language) é uma notação gráfica e textual padronizada permite representar diferentes aspectos de um sistema de software, desde os seus requisitos até a sua estrutura e comportamento. 
+[Normal] De acordo com Pressman e Maxim (2021, p.100) “UML é uma linguagem que contém uma notação robusta para a modelagem e desenvolvimento de sistemas orientados a objectos e tornou-se um padrão da indústria para o desenvolvimento de sistemas de todo tipo”. UML é uma linguagem padrão utlizada para descrever/documentar projecto de software. Pode ser usada para visualizar, especificar, construir e documentar os artefactos de sistema de software intensivo. 
+[Normal] A linguagem tornou-se um padrão da indústria por permitir a representação de soluções sob múltiplas perspectivas, o que ajuda a revelar erros, inconsistências e omissões, e por facilitar a comunicação entre os membros da equipe e a integração de entre as fases de requisitos e projecto (Pressman e Maxim, 2021). 
+[Heading 2] Desenvolvimento Web 
+[Normal] Desenvolvimento Web é o processo de criação e organização de páginas e aplicações para web, envolvendo abordagens principais como estruturação do conteúdo (usando HTML) e formatação do conteúdo (aplicando os estilos por meio de CSS) (Boniati & Silva, 2013). 
+[Normal] Segundo Badalotti (2014), desenvolvimento web é um processo de criação de páginas e aplicações para Internet, utilizando um conjunto de tecnologias que actuam tanto no lado cliente (cliente-side) quanto no lado do servidor (server-side). Sendo que as principais tecnologias são HTML, CSS, JavaScript e Servidor web (programas que interpretam as requisições dos clientes e retornam os conteúdos). 
+[Normal] A Web (derivada da expressão World Wide Web) é uma das funcionalidades da internet que permite navegar através hipertexto. Também conhecida com uma “grande teia”, baseia-se no princípio de navegação entre páginas interligadas por meio de links e hiperligações. Essa tecnologia foi concebida por Tim Berners-Lee que desenvolveu o protocolo HTTP (Hipertext Transfer Protocol) e linguagem HTML (Hipertext Markup Language) para garantir que os documentos fossem interligados e partilhados electronicamente, sendo assim, a web tornou-se num espaço de publicação e acesso de conteúdos que utilizam a infra-estrutura da internet (Boniati & Silva, 2013). 
+[Normal] O Desenvolvimento web é fundamental no mundo actual porque sustenta a comunicação, acesso à informação, o comércio electrónico e colaboração entre as pessoas e as empresas em escala global. E possibilita ainda a criação de aplicações acessíveis e adaptáveis a diferentes dispositivos, contribuindo para inclusão digital e para o funcionamento de serviços essenciais da economia digital, da educação e da interacção social (Badalotti, 2014). 
+[Heading 2] Engenharia de Software 
+[Normal] Engenharia de software é um campo da engenharia cujo o foco está na produção de software, desde os estágios iniciais da especificação do sistema até a manutenção, quando o sistema já sendo usado (Sommerville, 2011). 
+[Normal] Segundo Sommerville (2011, p.5), a engenharia de software é destacada por aspectos essenciais como as teorias, métodos e ferramentas que são aplicados pelos engenheiros de selectiva, buscando as soluções viáveis dentro de restrições organizacionais e financeiras, e ainda actividades de gestão de projectos, desenvolvimento de ferramentas e métodos de apoio. 
+[Normal] De acordo com Pressman e Maxim (2021), a Engenharia de software é definida como a aplicação de uma abordagem sistemática, disciplinada, quantificável ao desenvolvimento, operação e manutenção de software, ela se organiza em camadas que vão desde o compromisso com a qualidade até os métodos e ferramentas. 
+[Normal] A sua utilização é no desenvolvimento de software é justificada pela crescente complexidade dos sistemas, pela dependência crítica que a sociedade tem do software e pela necessidade produzir programas confiáveis, de fácil manutenção e dentro do prazo. Sem a Engenharia de software, o desenvolvimento de programas ou aplicações tenderia ao caos e os produtos finais não atenderiam adequadamente às necessidades dos usuários.  
+[Heading 1] PROCEDIMENTOS METODOLÓGICOS 
+[Heading 1] RESULTADOS DA PESQUISA
+[Heading 2] Requisitos 
+[Normal] Requisitos são operações que um sistema deve incorporar, estão intrinsecamente relacionados aos objectivos da empresa em relação ao software e às estratégias de negócios. 
+[Normal] De acordo com Sommerville (2011, p.7), são descrições que um sistema deve fazer, serviços que oferece e as restrições a seu funcionamento. Os requisitos são destacados por dois níveis que são requisitos de usuário refere ao serviço que o sistema deverá fornecer ao usuário e as restrições com quais este deve operar, requisito de sistema que se refere as descrições mais detalhadas das funções, serviços e restrições operacionais do sistema de software (Sommerville, 2011). 
+[Normal] Segundo Pressman e Maxim (2021, p.233-234) “compreender os requisitos de um problema está entre as tarefas mais difíceis enfrentadas por um engenheiro de software”. Os requisitos são bases de um projecto de software bem-sucedido, ou seja, estabelecem a ponte entre o projecto e a construção do sistema, garantindo que a solução atende às necessidades reais do cliente.
+[Heading 3] Requisitos Funcionais 
+[Normal] Os requisitos funcionais são declarações dos serviços que sistema deve proporcionar, de maneira que este deve reagir a entradas particulares e de como deve se comportar em situações particulares. Em alguns casos, os requisitos funcionais também podem declarar explicitamente o que sistema não deve fazer. 
+[Normal] Segundo Pressman e Maxim (2021), os requisitos funcionais de um software referem-se às funções que o sistema deve executar para oferecer benefícios directo ao usuário. Essas funções podem transformar dados, exercer controlo sobre o processamento interno ou interagir com elementos externos do sistema. Embora a engenharia de requisitos enfatize a funcionalidade, os requisitos funcionais devem ser complementos por requisitos não funcionais (como confiabilidade, segurança e usabilidade) para que o software seja verdadeiramente útil e aproveitável. A identificação e especificação adequadas dos requisitos funcionais são as tarefas centrais da construção da ponte entre o problema do cliente e a solução do software. 
+[Normal] Com base na definição apresentada acima, eis aqui os requisitos funcionais do meu sistema.
+[Normal] Tabela 1- Requisitos Funcionais 
+[Normal] Fonte: Elaborado pelo autor 
+[Heading 3] Requisitos Não Funcionais 
+[Normal] Os requisitos não funcionais são descritos como atributos de qualidade, de segurança, de desempenho ou como uma restrição geral em um sistema. Os envolvidos têm dificuldades de articulá-los (Pressman e Maxim, 2021). 
+[Normal] Segundo Sommerville (2011), os requisitos não funcionais são restrições aos serviços ou funções oferecidos pelo sistema. Incluem restrições de tempo (Timing), restrições no processo de desenvolvimento e restrições impostas pela norma. 
+[Normal] Com base informação acima, eis aqui os requisitos não funcionais do meu sistema.
+[Normal] Tabela 2 – Requisitos Não Funcionais 
+[Normal] Fonte: Elaborado pelo autor 
+[Heading 3] Regras de Negócio 
+[Normal] As regras de negócios estão directamente ligadas as leis, políticas e regulamentos que regem o funcionamento de uma organização. Elas descrevem, de forma complementar, o funcionamento dos processos de negócios (Vaquez & Simões, 2016).
+[Normal] As regras de negócios correspondem as políticas, leis, regulamentos e práticas que orientam o funcionamento de uma organização ou domínio de actividade. Essas regras existem independentemente do software e devem ser tratadas como um activo organizacional, já que refletem as necessidades e restrições de negócio. Assim sendo, uma aplicação pode conter regras específicas associadas ao seu funcionamento interno, que estão directamente relacionadas com a implementação do software e não ao domínio do negócio. 
+[Normal] De acordo com Mendes e Olcha (2020, p.8), as regras de negócio são premissas e restrições estabelecidas para uma organização funcionar de maneira a adequada. Definem o que será feito, quando será, onde será feito, por que será feito e como será feito e como tudo será gerido. 
+[Normal] É comum que as regras de negócios sejam compartilhadas entre diferentes requisitos funcionais, inclusive alocados a produtos de softwares diferentes. Portanto, especificá-los de forma diferentes dos requisitos funcionais em que se aplicam contribui para uma melhor gestão dos requisitos (facilidade modificação e principalmente de reutilização) (Vaquez &Simões, 2016). 
+[Normal] Tabela 3 – Regras de Negócios 
+[Normal] Fonte: Elaborado pelo autor
+[Heading 2] Modelagem do Sistema 
+[Heading 3] Diagrama de Contexto 
+[Normal] Diagrama de contexto é um tipo de modelo estrutural utilizado na fase inicial da especificação de um sistema. Ele tem como objectivos representar os limites de um sistema que está sendo desenvolvido, mostrando interacções entre os sistemas e os demais sistemas (entidades externas) presentes no seu ambiente operacional (Sommerville, 2011).
+[Normal] Ajuda na definição do que está dentro e do que está fora do sistema, identifica as dependências do sistema em relação ao seu ambiente, incluindo sistemas automatizados, processos manuais, dispositivos de hardware e actores humanos, serve como ponto de partida para modelagem dos requisitos e para comunicação dos stakeholders. 
+[Normal] Permite que os engenheiros de software e stakeholders visualizem o escopo do sistema, evitando omissões ou inclusões indevidas de funcionalidades, ajuda identificar quais requisitos farão parte do novo sistema e quais serão tratados por sistemas externos e processos manuais (Sommerville, 2011). 
+[Normal] Com conceito acima apresentados, eis aqui o diagrama de contexto do meu sistema. 
+[Normal] Figura 4: Diagrama de contexto 
+[Normal] Fonte: Autor 
+[Heading 3] Diagrama de Caso de Uso 
+[Normal] Segundo Sommerville (2011), diagrama de casa de uso é entendido como um cenário simples que descreva o que o usuário de um sistema, representa uma tarefa discreta que envolve a interacção externa com o sistema. 
+[Normal] De acordo com o Pressman e Maxim (2021), o digrama de caso de uso é uma representação gráfica utilizada em modelagem UML, serve para sintetizar e comunicar o cenário de uso de um sistema, ele é desenvolvido durante as actividades de engenharia de requisitos e modelagem de requisitos. O principal objectivo é mostrar as relações entre os casos de usos e actores que interagem com o sistema, ele fornece uma visão de alto nível de funcionalidade do sistema do ponto de vista do usuário. 
+[Normal] Na sua estrutura, o diagrama é composto por actor (boneco de palitos) representa uma ou grupo de pessoa que desempenha um papel ao interagir com o sistema, caso de uso (uma elipse com seu nome no interior) representa uma funcionalidade que atende um ou mais requisitos dos clientes, relacionamento representa a interacção do autor com o caso de uso, representado por uma linha ou seta (relacionamentos específicos: generalização ou especialização, extensão <<extend>> inclusão <<include>>) (Vaquez & Simões, 2016). 
+[Normal] Figura 4: Diagrama de caso de Uso 
+[Normal] Fonte: Autor 
+[Heading 4] Especificação do Caso de Uso 
+[Normal] A especificação do caso de uso é o documento ou parte de um documento que descreve, em detalhes, o comportamento esperado do sistema para aquele caso de uso. Ele complementa o diagrama, fornecendo informações que não podem ser representadas graficamente, como sequência de passos, regras e condições (Vaquez & Simões, 2016). 
+[Normal] Para uma melhor especificação do caso de uso, ela deve atender um conjunto de necessidades de informações, contendo os elementos mínimos que são: Nome do caso de uso, breve descrição, actores, pré-condições, pós-condições, fluxo principal, fluxo alternativos e de exceção e regras de negócios. 
+[Normal] Para Vaque e Simões (2016), a especificação de caso de uso é o principal artefacto para o detalhe do escopo e da profundidade dos requisitos. Ela transforma a visão de alto nível do diagrama em uma descrição executável e verificável do comportamento do sistema, servindo como um contrato entre as partes interessadas e a equipa de desenvolvimento e como uma base sólida para elaboração de casos de testes. 
+[Normal] Tabela CSU – 001 Login 
+[Normal] Tabela 4: Descrição de uso (Login/Autenticação)
+[Normal] Fonte: Autor 
+[Normal] Tabela CSU – 002 Gerir Perfil 
+[Normal] Tabela 5- Descrição do Uso (Gerir perfil)
+[Normal] Fonte: Autor 
+[Normal] Tabela CSU - 003 Criar Carteira Fictícia 
+[Normal] Tabela 6- Descrição do Uso (Criar carteira fictícia)
+[Normal] Fonte: Autor 
+[Normal] Tabela CSU – 004 Simular Investimento (Cálculo de Rentabilidade nominal e Real)
+[Normal] Tabela 7- Descrição do Uso (Simular Investimento)
+[Normal] Fonte: Autor 
+[Normal] Tabela CSU – 005 Visualizar Dashboard 
+[Normal] Tabela 8- Descrição do Uso (Visualizar Dashboard)
+[Normal] Fonte: Autor 
+[Normal] Tabela CSU – 006 Gerir utilizadores 
+[Normal] Tabela 9- Descrição do Uso (Gerir Utilizador)
+[Normal] Fonte: Autor 
+[Normal] Tabela CSU – 007 Consultar Dados Financeiros 
+[Normal] Tabela 10- Descrição do Uso (Consultar dados Financeiros)
+[Normal] Fonte: Autor 
+[Normal] Tabela CSU – 008 Gerir Taxa de Inflação 
+[Normal] Tabela 11- Descrição do Uso (Consultar dados Financeiros)
+[Normal] Fonte: Autor
+[Normal] Tabela CSU – 009 Consultar Logs 
+[Normal] Tabela 12- Descrição do Uso (Consultar Logs)
+[Normal] Fonte: Autor
+[Normal] Tabela CSU – 010 Monitorar o Sistema 
+[Normal] Tabela 13- Descrição do Uso (Monitorar o sistema)
+[Normal] Fonte: Autor
+
+
+=== TABELAS ===
+
+--- Tabela 0 ---
+Requisitos Funcionais || Requisitos Funcionais || Requisitos Funcionais
+ID || Descrição || Prioridade
+RF001 || O sistema deve permitir o registo, autenticação (login) e edição dos dados dos utilizadores, recuperação da palavra-passe e encerramento de sessão (logout). || Essencial
+RF002 || O sistema deve permitir a criação de uma carteira de investimento, adicionar activos financeiros à carteira, consultar a composição da carteira, visualizar o valor total investido na carteira. || Essencial
+RF003 || O sistema deve permitir a exclusão dos activos da carteira || Importante
+RF004 || O Sistema deve permitir simular investimentos de obrigações de tesouros e acções, ao utilizador definir montante a investir e o período de investimento. || Essencial
+RF005 || O sistema deve calcular a rentabilidade nominal e rentabilidade real ajustada a inflação. || Essencial
+RF006 || O sistema deve apresentar o lucro ou prejuízo estimado do investimento, realizar múltiplas simulações sem alterar dados reais. || Essencial
+RF007 || O sistema deve permitir a comparação de diferentes cenários de investimentos. || Importante
+RF008 || O Sistema deve obter os dados actualizados (públicos) recolhidos via web scripting (de formal manual) de obrigações de tesouros e acções no site da BODIVA || Essencial
+RF009 || O sistema deve armazenar os índices de inflação usados nos cálculos e utilizar dados históricos para realizar os cálculos de simulações. || Essencial
+RF010 || O sistema deve apresentar gráfico de evolução de investimento, apresentar gráficos comparativos entre rentabilidade nominal e real || Importante
+RF011 || O sistema deve gerar relatórios resumidos das simulações e apresentar indicadores de desempenhos dos investimentos simulados || Importante
+RF012 || O Sistema deve permitir a exportação de relatórios em formato PDF || Desejável
+RF013 || O Sistema deve permitir o administrador gerir os utilizadores e permitir gestão dos dados financeiros || Essencial
+RF014 || O sistema deve permitir que administrador visualize as estatísticas da utilização da plataforma || Desejável
+RF015 || O sistema deve registar eventos relevantes para auditoria do sistema. || Importante
+
+--- Tabela 1 ---
+Requisitos Não Funcionais || Requisitos Não Funcionais || Requisitos Não Funcionais
+ID || Descrição || Tipo
+RNF001 || As palavras-passe devem ser armazenadas de forma encriptada usando Argon2id, o sistema deve implementar controlo de acesso baseado em perfis (administrador e investidor comum) || Segurança
+RNF002 || O sistema deve proteger os dados utilizadores contra acesso não autorizados, deve registar tentativas de acessos inválidas. || Segurança
+RNF003 || O sistema deve implementar protecções contra SQL injection, XSS, CSRF (validação de inputs, prepared Statements, tokens) || Segurança
+RNF004 || O sistema deve responder as operações principais em menos de 5 segundos, suportar múltiplos utilizadores simultaneamente. || Desempenho
+RNF005 || Os cálculos de simulação devem ser executados em tempo real || Desempenho
+RNF006 || O sistema deve possuir uma interface intuitiva e de fácil utilização, ser responsivo para computadores, tablets e smartphones || Usabilidade
+RNF007 || O sistema de apresentar mensagens de erros claras e compreensíveis || Usabilidade
+RNF008 || O sistema deve garantir a integridade dos dados armazenados, realizar cópias de seguranças (backups) periodicamente, garantir uma disponibilidade mínima de 99%. || Confiabilidade
+RNF009 || O sistema deve permitir adição de novos activos futuramente, suportar o crescimento de números de utilizadores sem degradação significativa do desempenho || Escalabilidade
+RNF010 || O sistema deve ser desenvolvido seguindo uma arquitectura modular, o código-fonte deve ser documentado separando claramente o front-end, back-end e módulo de raspagem. || Manutenibilidade
+RNF011 || O sistema deve permitir actualizações dos dados financeiros sem necessidade de alterações estruturais || Manutenibilidade
+
+--- Tabela 2 ---
+Regras de Negócio || Regras de Negócio || Regras de Negócio
+ID || Tipo || Descrição
+RN001 || Utilização exclusiva para Simulação. || O Sistema destina-se exclusivamente para simulação de investimento, não permitindo a compra, venda ou negociação real de activos financeiros
+RN002 || Utilização dos dados históricos || Todas simulações serão feitas com base nos dados históricos públicos obtidos no site da BODIVA e índices oficiais de inflação previamente armazenados na base de dados
+RN003 || Criação de carteira Virtual || Cada utilizador pode criar uma ou mais carteira fictícia para realizar simulações sem impacto financeiro real.
+RN004 || Valor de investimento || O valor a investir deve ser maior que zero, deve ser calculado com seguinte quantidade*preço de compra (na data simulada).
+RN005 || Seleccção de activos existentes || O utilizador só pode simular investimentos em activos que estejam previamente armazenados na base de dados.
+RN006 || Rentabilidade Nominal || A rentabilidade deve ser calculada considerando exclusivamente a variação do valor do activo ou os rendimentos associados ao investimento, sem considerar a inflação. Calculado usando o preço actual (último preço disponível) ou preço de venda data simulada: (valor actual - valor investido) / valor investido.
+RN007 || Rentabilidade Real || A rentabilidade real deve ser calculada ajustando a rentabilidade nominal pela taxa de inflação corresponde ao período analisado: (1 + Renta Nominal) / (1 + Inflação) – 1.
+RN008 || Associação da Inflação || Para cada simulação, o sistema deve utilizar a inflação corresponde ao período definido pelo utilizador, pode ser inserido manualmente pelo administrar e cada registo deve incluir o mês, ano, valor do índice e fonte, deve ser obtida a partir do índice de preço do consumidor do (IPC) oficial de Angola.
+RN009 || Preservação dos dados históricos || Os dados históricos usados nas simulações não podem ser alterados pelos investidores comuns. Nunca podem ser apagados ou subscritos, apenas nos registos devem ser inseridos.
+RN010 || Integridade dos dados financeiros || A Gestão dos dados mercados deve ser feita pelos utilizadores com perfis de administrador.
+RN011 || Comparação dos cenários diferentes || O sistema deve permitir a comparação de diferentes cenários de investimento utilizando os mesmos critérios temporais e monetárias.
+RN012 || Históricos de Simulações || Cada utilizador pode consultar as simulações anteriormente realizada para fins de análise e comparação.
+RN013 || Transparência dos resultados || Todos resultados apresentados devem indicar claramente: valor investido, período analisado, rentabilidade nominal, taxa de inflação utilizada, rentabilidade real, ganho ou perda estimada.
+RN014 || Carácter Informativo || Os resultados gerados pelo sistema possuem carácter informativo e educacional, não constituindo recomendações de investimento.
+RN015 || Acesso autenticado || Somente os utilizadores autenticados podem criar carteiras e realizar simulações.
+RN016 || Protecção dos dados dos Utilizadores || Os dados pessoais dos utilizadores devem ser utilizados para fins de autenticação, gestão de contas e armazenamento de simulações realizadas. A senha dos utilizadores deve ter no mínimo 8 caracteres, incluindo letras e números. Não deve ser igual ao email ou ao nome. Somente o utilizador pode visualizar, alterar ou remover os seus dados pessoais e carteiras fictícias.
+RN017 || Validação da entrada dos dados || O Sistema não deve permitir a entrada dos dados como: valores negativos de investimentos, períodos de investimentos inválidos, selecção dos ativos inexistentes, campos obrigatórios em branco.
+RN018 || Consistências dos cálculos || Os cálculos de rentabilidade devem seguir a mesma metodologia para todos utilizadores, garantindo resultados consistentes para entradas idênticas.
+RN019 || Logs e Bloqueios || O sistema deve registar log em toda acção de simulação, criação ou eliminação de carteira fictícia e tentativas de login em caso de falha, após 5 tentativas de tentativas de login sem sucesso, a conta do utilizador deve ser bloqueada temporariamente por 15 minutos.
+
+--- Tabela 3 ---
+Identificação || CSU- 001 | Login
+Caso de Uso Geral || Autenticação dos utilizadores
+Actor Principal || Administrador e investidor
+Descrição || Permite que administrador ou investidor aceda o sistema através de credenciais válidas. Após a autenticação bem-sucedida, o sistema conceda acesso às funcionalidades correspondentes ao perfil do utilizador.
+Pré-condições || O utilizador deve estar previamente registado no sistema, a conta deve estar activa, deve possuir credenciais válidas.
+Pós-condições || O utilizador é autenticado no sistema, o sistema identifica o perfil do utilizador (investidor ou administrador), o mesmo é redirecionado ao painel correspondente ao seu perfil, é registado um log de autenticação efectuada
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Aceder a página de login do sistema || 
+Introduzir o email ou nome do utilizador e a palavra-passe. || 
+Clicar no botão “Entrar” || 
+ || Valida se todos campos obrigatórios forma preenchidos.
+ || Verifica se o utilizador se encontra registado.
+ || Verifica se a conta se encontra activa
+ || Compara a palavra-passe introduzida como hash armazenado na base dados.
+ || Identifica o perfil do utilizador (administrador e investidor)
+ || Regista autenticação nos logs do sistema
+ || Autentica o utilizador e redireciona-o para painel correspondente.
+Restrições e Validações || Restrições e Validações
+Todos campos são de preenchimentos obrigatórios; | A palavra-passe deve criada contendo no mínimo 8 caracteres, contendo letras, números e símbolos; | O nome do utilizador ou email deve ser válidos; | As credenciais devem pertencer a uma conta registada e activa; || Todos campos são de preenchimentos obrigatórios; | A palavra-passe deve criada contendo no mínimo 8 caracteres, contendo letras, números e símbolos; | O nome do utilizador ou email deve ser válidos; | As credenciais devem pertencer a uma conta registada e activa;
+Fluxo alternativo A – Recuperação da Palavra-passe || Fluxo alternativo A – Recuperação da Palavra-passe
+Acções do Actor || Acções do sistema
+Clicar em “Esqueceu-se da palavra-passe?” || 
+ || Apresenta o formulário de recuperação
+Introduz o endereço email associado à conta || 
+ || Verifica se o email está registado.
+ || Envia uma ligação ou código de recuperação
+Defina uma nova palavra-passe || 
+ || Actualiza a palavra-passe e informa o sucesso da operação
+Fluxo alternativo B – Conta bloqueada || Fluxo alternativo B – Conta bloqueada
+Acções do Actor || Acções do sistema
+Insere credenciais correctas, mas a conta está no estado “bloqueio” || 
+ || Verifica o estado da conta na base dados
+ || 
+ || Detecta que a conta está bloqueada e o que o tempo de bloqueio ainda não expirou.
+ || Exibe a mensagem: “A sua conta está temporariamente bloqueada devido a múltiplas tentativas falhadas, por favor, aguarda o tempo restante”
+ || Não permite acesso, mesmo que credenciais estejam correctas
+Fluxo alternativo C- Dados em faltas || Fluxo alternativo C- Dados em faltas
+Acções do Actor || Acções do sistema
+Clica em “Entrar” sem preencher o email ou palavra-passe || 
+ || Detecta que os campos obrigatórios estão vazios
+ || Exibe a mensagem de validação: “Todos os campos são obrigatórios, por favor, preencha a palavra-passe e a email”
+ || Mantém o utilizador na página de login sem redirecionar.
+Fluxo alternativo C- Credenciais Inválidas || Fluxo alternativo C- Credenciais Inválidas
+Acções do Actor || Acções do sistema
+Insere as credenciais inválidas || 
+ || Verifica as credenciais fornecida
+ || Detecta inconsistência do nome utilizador/email ou na palavra-passe.
+ || Regista tentativa de autentificação falhada nos logs do sistema.
+ || Exibe a mensagem: “O nome do utilizador/email ou palavra-passe incorrecta.
+
+--- Tabela 4 ---
+Identificação || CSU- 002 | Gerir Perfil
+Caso de uso Geral || Gestão de perfil do investidor
+Actor principal || Investidor
+Descrição || Permite ao investidor visualizar, editar e actualizar os dados pessoais (nome, email e palavra-passe), garantindo a integridade e actualização das informações registada no sistema.
+Pré-condições || O investidor deve estar autenticados no sistema (login efectuado) e a sua conta deve estar activa.
+Pós-condições || Os dados do perfil do investidor são actualizados e armazenados com sucesso na base de dados.
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Acede a opção “Gerir perfil” || 
+Solicita a visualização das informações do perfil || 
+ || Recupera os dados do perfil do investidor na base de dados
+ || Exibe as informações do perfil na interface, apresentando um formulário com dados actuais do investidor
+Altera os dados pretendidos || 
+Clica no botão “Guardar” || 
+ || Valida os dados inseridos, confirmando se o nome contém pelo menos 2 caracteres, se senha actual é idêntica ao hash armazenado, se senha nova tem pelo menos 8 caracteres, se a senha de confirmação é idêntica a nova.
+ || Valida se email tem formato válida e não está associado a outro utilizador.
+ || Actualiza as informações do perfil na base de dados
+ || Regista a operação nos log do sistema
+ || Apresenta uma mensagem de confirmação da actualização
+Restrições e Validações || Restrições e Validações
+O investidor deve estar autenticado no sistema; | Os campos obrigatórios devem ser todos preenchidos; | O nome do investidor não deve estar vazio; | O endereço email deve ter um formato válido e não deve está associado a outro utilizador; | Caso seja alterada, a palavra-passe deve conter no mínimo 8 caracteres; | O deve garantir a confiabilidade e integridade dos dados do investidor; | As alterações efectuadas devem ser registadas nos logs do sistema; || O investidor deve estar autenticado no sistema; | Os campos obrigatórios devem ser todos preenchidos; | O nome do investidor não deve estar vazio; | O endereço email deve ter um formato válido e não deve está associado a outro utilizador; | Caso seja alterada, a palavra-passe deve conter no mínimo 8 caracteres; | O deve garantir a confiabilidade e integridade dos dados do investidor; | As alterações efectuadas devem ser registadas nos logs do sistema;
+
+--- Tabela 5 ---
+Identificação || CSU – 003 | Criar Carteira Fictícia
+Caso de Uso Geral || 
+Actor Principal || Investidor
+Descrição || Permite o investidor criar uma carteira fictícia para organizar os seus investimentos simulados em obrigações de Tesouros e acções da BODIVA, possibilitando o acompanhamento do desempenho dos activos sem envolver os recursos financeiros reais.
+Pré-condições || O investidor deve estar autenticado no sistema e a sua conta não deve estar bloqueada.
+Pós-condições || A carteira fictícia é criada e registada na base de dados, ficando disponível para realização de investimentos e acompanhamento de simulações.
+Fluxo principal || Fluxo principal
+Acções do Actor || Acções do Sistema
+Acede a opção “Criar carteira fictícia” || 
+ || Apresenta o formulário de criação de carteira
+Introduz as informações de carteira (nome, descrição) || 
+Clica no botão “Criar” || 
+ || Valida se todos campos obrigatórios foram preenchidos  | Verifica se o campo do nome está vazio, se o nome contém pelo menos 3 caracteres e se o nome pertence a outra carteira.
+ || Regista a carteira fictícia na base de dados.
+ || Associa a carteira ao perfil do investidor
+ || Inicializa a carteira sem activos financeiros
+ || Regista a operação nos logs do sistema
+ || Apresenta uma mensagem de sucesso informando que a criação da carteira foi efectuada com sucesso.
+Restrições e Validações || Restrições e Validações
+O investidor deve estar autenticado no sistema; | O nome do investidor deve ser obrigatório, não deve estar vazio e deve ser único para cada investidor; | Uma carteira deve estar apenas associada a um investidor, os dados da carteira devem ser armazenados de forma íntegra e segura; | O sistema deve registar a operação de criação nos logs do sistema;  | A criação de carteira não implica a existência imediata de activos financeiros na mesma; || O investidor deve estar autenticado no sistema; | O nome do investidor deve ser obrigatório, não deve estar vazio e deve ser único para cada investidor; | Uma carteira deve estar apenas associada a um investidor, os dados da carteira devem ser armazenados de forma íntegra e segura; | O sistema deve registar a operação de criação nos logs do sistema;  | A criação de carteira não implica a existência imediata de activos financeiros na mesma;
+
+--- Tabela 6 ---
+Identificação || CSU – 004 | Simular Investimento (Cálculo de rentabilidade nominal e Real)
+Caso de Uso Geral || Simular investimentos e Análise de Rentabilidade das carteiras
+Actor Principal || Investidor
+Actores secundários || Sistema de dados Financeiros
+Descrição || Permite o investidor simular investimentos em obrigações de tesouros da BODIVA, com base nos dados históricos armazenados no sistema, calculando a rentabilidade nominal e Real ajustada com a inflação.
+Pré-condições || O investidor deve estar autenticado no sistema e possuir carteira fictícia. Deve existir dados históricos de ativos e taxas de inflação registadas no sistema.
+Pós-Condições || A simulação é concluída e os resultados são apresentados ao investidor, o histórico de simulação é armazenado no sistema e podendo ser exportado pelo investidor.
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Acede a opção “Simular Investimentos” || 
+ || Apresenta ao investidor os activos disponíveis na carteira para simulação
+Selecciona o tipo de activo (obrigações tesouros ou Acções) || 
+Introduz o valor de investimento e o período de aplicação (definindo a data de início e data fim aplicação) || 
+Clica no botão “Simular” || 
+ || Valida os dados ou parâmetros inseridos | - Verifica se a data de início é anterior a data de fim  | - Verifica se existem dados históricos de preço para activos nas datas selecionadas. Verifica se existem dados de inflação para o período (necessário para cálculo de rentabilidade real)
+ || Recupera os dados histórico do activo selecionado.
+ || Recupera os índices de inflação correspondentes ao período, calcula a inflação acumulada de acordo aos índices desse período.
+ || Calcula a rentabilidade nominal do investimento.
+ || Calcula a rentabilidade real ajustada com inflação.
+ || Determina o valor final do investimento
+ || Regista o histórico de simulação
+ || Apresenta o resultado simulação ao investidor.
+Restrições e Validações || Restrições e Validações
+O investidor deve estar autenticado no sistema e deve possuir uma carteira fictícia;  | O valor do investimento deve ser superior a zero (0); | O período de simulação deve ser válido, a data de início deve ser anterior a data de fim, a data de início não deve ser uma data futura (Pois, trata-se de dados históricos da BODIVA);  | O Sistema só permite simular se a carteira contém pelo um activo; | O activo financeira seleccionado deve existir na base de dados, devem existir dados históricos do activo e do índice de inflação correspondentes ao período de simulação;  | É obrigatória a existência dos dados da inflação para todo período nos cálculos da rentabilidade real. Pois, caso falte algum mês, sistema bloqueia e interrompe os cálculos;  | Os cálculos devem ser efectuados com base nos dados históricos armazenados na base de dados do sistema pela raspagem manual da BODIVA; | O histórico de simulação deve ser armazenado na base de dados do sistema;  | O sistema deve garantir a integridade e a consistências dos resultados apresentados; || O investidor deve estar autenticado no sistema e deve possuir uma carteira fictícia;  | O valor do investimento deve ser superior a zero (0); | O período de simulação deve ser válido, a data de início deve ser anterior a data de fim, a data de início não deve ser uma data futura (Pois, trata-se de dados históricos da BODIVA);  | O Sistema só permite simular se a carteira contém pelo um activo; | O activo financeira seleccionado deve existir na base de dados, devem existir dados históricos do activo e do índice de inflação correspondentes ao período de simulação;  | É obrigatória a existência dos dados da inflação para todo período nos cálculos da rentabilidade real. Pois, caso falte algum mês, sistema bloqueia e interrompe os cálculos;  | Os cálculos devem ser efectuados com base nos dados históricos armazenados na base de dados do sistema pela raspagem manual da BODIVA; | O histórico de simulação deve ser armazenado na base de dados do sistema;  | O sistema deve garantir a integridade e a consistências dos resultados apresentados;
+Fluxo Alternativo A – Parâmetros Inválidos || Fluxo Alternativo A – Parâmetros Inválidos
+Acções do Actor || Acções do Sistema
+Insira um valor de investimento inválido ou período inválido || 
+Clica no botão “Simular” || 
+ || Valida os campos inseridos. Detecta a inconsistências nos parâmetros fornecidos.
+ || Apresenta uma mensagem de erros mostrando os campos inválidos.
+ || Peça a correção dos dados para prosseguir com a simulação.
+Fluxo Alternativo B – Dados indisponíveis || Fluxo Alternativo B – Dados indisponíveis
+Acções do Actor || Acções do Sistema
+Peça simulação de investimentos || 
+ || Verifica a exigência de dados históricos, índices de inflação e seus períodos, data de início e data de fim.
+ || Detecta ausência e insuficiência de dados e informa que não é possível continuar com a simulação
+ || Exibe uma mensagem indicando a indisponibilidade dos dados
+
+--- Tabela 7 ---
+Identificação || CSU – 005 Visualizar Dashboard
+Caso de Uso Geral || Painel de controlo e resumo do sistema
+Actor principal || Administrador e Investidor (ambos realizam a mesma funcionalidade, com conteúdos distintos)
+Actores Secundários || Base de dados, Sistemas de logs, módulo de scrapting
+Descrição || Permite ao utilizador autenticado visualizar informações resumidas e indicadores relevantes do sistema, com base no seu perfil de acesso. O investidor visualiza informações e simulações, enquanto, o administrador visualiza informações relacionadas aos utilizadores e a operação do sistema.
+Pré-condições || O utilizador deve estar autenticado e sua conta deve estar activa.
+Pós-condições || O Sistema apresenta as informações e indicadores correspondentes num dashboard com dados actualizados na sua interface.
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Acede a página inicial do sistema ou clique no menu “Dashboard” || 
+ || Identifica o perfil do utilizador autenticado
+ || Recupera as informações relevantes do perfil na base de dados.
+ || Se for o perfil do utilizador:  | - Apresenta o total do valor investido; | - Apresenta o total do valor actual;  | - Apresenta o valor da rentabilidade nominal geral  | - Apresenta o valor da rentabilidade real geral (ajustada com inflação) | - Apresenta o número de simulações efectuadas.
+ || Se for perfil do administrador:  | - Consulta números de utilizadores registados no sistema e o número de utilizadores activos e bloqueados do sistema.  | - Obtém o número total de simulações realizadas por todos utilizadores.  | - Lista todos as notificações de erros.
+ || Compila todos os dados num formato visual (cards, gráficos e tabelas)
+ || Apresenta o dashboard completo para o utilizador.
+Consulta as informações apresentadas || 
+ || Actualiza dados necessário sempre que necessário
+Restrições e validações || Restrições e validações
+O utilizador deve estar autenticado no sistema; | As informações apresentadas devem corresponder ao perfil do utilizador autenticado;  | Para investidor: O Dashboard só exibe dados se o investidor possuir uma carteira fictícia. Se não houver uma carteira fictícia, o sistema uma mensagem de boas vindas com um botão “Criar carteira Fictícia”;  | Os dados exibidos devem ser recuperados na base de dados do sistema;  |  O dashboard deve apresentar apenas informações às quais o utilizador possui permissão de acesso;  | Todos números monetários e percentagens devem ser exibidos em percentagens adequadas (moedas KZ, duas casas decimais);  | Os dados do dashboard do administrador devem ser imutáveis (apenas leitura) e refletir o estado actual do sistema;  | O Sistema deve garantir a integridade e a confidencialidade dos dados apresentados; || O utilizador deve estar autenticado no sistema; | As informações apresentadas devem corresponder ao perfil do utilizador autenticado;  | Para investidor: O Dashboard só exibe dados se o investidor possuir uma carteira fictícia. Se não houver uma carteira fictícia, o sistema uma mensagem de boas vindas com um botão “Criar carteira Fictícia”;  | Os dados exibidos devem ser recuperados na base de dados do sistema;  |  O dashboard deve apresentar apenas informações às quais o utilizador possui permissão de acesso;  | Todos números monetários e percentagens devem ser exibidos em percentagens adequadas (moedas KZ, duas casas decimais);  | Os dados do dashboard do administrador devem ser imutáveis (apenas leitura) e refletir o estado actual do sistema;  | O Sistema deve garantir a integridade e a confidencialidade dos dados apresentados;
+Fluxo Alternativo A – Erro de Conexão à Base de Dados || Fluxo Alternativo A – Erro de Conexão à Base de Dados
+Acções do Actor || Acções do Sistema
+Acede ao “Dashboard” || 
+ || Tenta consultar a base de dados, mas recebe um erro de timeout ou indisponibilidade
+ || Apresenta uma mensagem: “Ocorreu um erro ao carregar o Dashboard. Os dados podem estar temporariamente indisponíveis. Por favor, carregue a página ou tente novamente mais tarde.
+ || Regista erro nos logs internos para análise do administrador.
+
+--- Tabela 8 ---
+Identificação || CSU – 006 Gerir utilizador
+Caso de uso Geral || Administração de contas do investidor
+Actor Principal || Administrador
+Actor Secundário || Base de Dados e Sistema de Autenticação
+Descrição || O administrador consulta, visualiza, actualiza, pesquisa, bloqueia e desbloqueia o estado de todos investidores registado no sistema, garantindo a gestão e controlos de acessos à plataforma.
+Pré-condições || O administrador deve estar autenticado no sistema com perfil de administrador, não possui uma conta bloqueada. O sistema tem de possuir pelo menos um investidor registado, caso contrário, a lista estará vazia.
+Pós- condições || As informações ou estado do utilizador são registados na base de dados e as operações efectuadas ficam registadas nos logs do sistema contendo data, hora, administrador responsável e utilizador afectado.
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Acede ao menu “Gerir Utilizador” no painel administrador || 
+ || Consulta a lista de todos os utilizadores registado na base de dados, apresenta a lista dos utilizadores.
+Selecciona o utilizador || 
+ || Apresenta informações detalhadas do utilizador seleccionado
+Escolhe a opção pretendida (visualizar, bloquear, desbloquear e excluir). Confirma a operação. || 
+ || Apresenta uma mensagem de diálogo: “Tens certeza que queres bloquear, desbloquear ou excluir esse utilizador?”
+Confirma acção clicando em “Sim” ou cancela, caso tenha seleccionado errado. || 
+ || Valida a operação solicitada.
+ || Actualiza o estado ou exclui o utilizador na base de dados, com base na operação escolhida.
+ || Regista a operações nos logs do sistema. Apresenta uma mensagem de confirmação da operação: “A operação foi realizada com sucesso. A conta de nome [nome] foi bloqueado/desbloqueado/excluído.”
+Restrições e Validações || Restrições e Validações
+O administrador deve estar autenticado no sistema; | Apenas administrador podem gerir utilizadores;  | O sistema deve apresentar apenas utilizadores registados;  | O administrador não pode excluir a sua conta enquanto estiver autenticado;  | O sistema deve solicitar a confirmação antes do bloqueio, desbloqueio e exclusão de um utilizador. O sistema tem de exibir visualmente o estado de cada utilizador com cores distintas (verde para activo, vermelho para bloqueado);  |  Todas as operações realizadas devem ser registadas nos logs do sistema;  | O sistema deve garantir a integridade e confidencialidade dos dados dos utilizadores;  | Todas as operações realizadas devem ser refletidas imediatamente no base de dados; || O administrador deve estar autenticado no sistema; | Apenas administrador podem gerir utilizadores;  | O sistema deve apresentar apenas utilizadores registados;  | O administrador não pode excluir a sua conta enquanto estiver autenticado;  | O sistema deve solicitar a confirmação antes do bloqueio, desbloqueio e exclusão de um utilizador. O sistema tem de exibir visualmente o estado de cada utilizador com cores distintas (verde para activo, vermelho para bloqueado);  |  Todas as operações realizadas devem ser registadas nos logs do sistema;  | O sistema deve garantir a integridade e confidencialidade dos dados dos utilizadores;  | Todas as operações realizadas devem ser refletidas imediatamente no base de dados;
+
+--- Tabela 9 ---
+Identificação || CSU – 007 Consultar Dados Financeiros
+Caso de Uso Geral || Consulta dos Dados Financeiros.
+Actor Principal || Administrador
+Descrição || O administrador consulta os dados financeiros históricos de obrigações de tesouros e acções da BODIVA armazenados na base de dados do sistema, possibilitando a verificação das informações utilizadas nas simulações de investimentos.
+Pré-condições || O administrador deve estar autenticado no sistema e devem existir dados financeiros armazenados na base de dados.
+Pós-condições || Os dados financeiros são apresentados ao administrador para consulta, sem alteração das informações armazenadas.
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Acede ao menu “Consultar Dados Financeiros” || 
+ || Consulta os dados financeiros armazenados na base de dados do sistema. Apresenta a lista dos dados financeiros disponíveis.
+Selecciona o tipo de activo financeiro pretendido || 
+ || Mostra os dados históricos correspondentes ao activo seleccionado
+Define critérios de pesquisas ou filtragem (por exemplo, activo ou período). || 
+ || Filtra os dados conforme os critérios, apresenta os dados da consulta.
+Consulta as informações apresentadas. || 
+ || Regista as operações nos logs do sistema.
+Restrições e Validações || Restrições e Validações
+O administrador deve estar autenticado no sistema;  | Apenas os administradores podem consultar esses dados financeiros através desta funcionalidade;  | Os dados apresentados devem corresponder aos dados armazenados na base de dados do sistema; | O Sistema não deve permitir alterar os dados financeiros através deste caso de uso; | O sistema deve garantir a integridade e a consistências das informações apresentadas; | A consulta deve permitir a filtragem por tipo de activo e período;  | Todas consultadas efectuadas devem ser registadas nos los do sistema; || O administrador deve estar autenticado no sistema;  | Apenas os administradores podem consultar esses dados financeiros através desta funcionalidade;  | Os dados apresentados devem corresponder aos dados armazenados na base de dados do sistema; | O Sistema não deve permitir alterar os dados financeiros através deste caso de uso; | O sistema deve garantir a integridade e a consistências das informações apresentadas; | A consulta deve permitir a filtragem por tipo de activo e período;  | Todas consultadas efectuadas devem ser registadas nos los do sistema;
+
+--- Tabela 10 ---
+Identificação || CSU – 008 Gerir Taxa de Inflação
+Caso de Uso Geral || Gestão das Taxas de inflação
+Actor principal || Administrador
+Descrição || Administra gere as taxas de inflação registadas no sistema, possibilitando a consulta a inserção manual, actualização e exclusão dos índices de inflação utilizados nos cálculos de rentabilidade real nas simulações de investimentos. Isso permite que dados dos índices de inflação estejam sempre actualizadas e consistentes com fontes oficiais (inflação de Angola)
+Pré-condições || O administrador deve estar autenticado no sistema com perfil de administrador. E a conta deve estar activa.
+Pós-condições || As taxas são consultadas, inseridas, actualizadas e excluídas com sucessos e são refletidas na base de dados para utilização posterior nos cálculos de simulações de investimentos.
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Acede ao menu “Gerir Taxas de Inflação” no painel do administrador || 
+ || Apresenta a interface de gestão, busca os dados já existentes na base dados, e ainda apresenta a lista das taxas de inflação disponíveis.
+Selecciona a opção pretendida (consultar, inserir, actualizar e exclusão) || 
+Introduz ou altera os dados de inflação quando aplicável. || 
+Confirma a operação. || 
+ || Valida os campos introduzidos.
+ || Verifica se já existe uma taxa de inflação com o mesmo período, quando a operação for de inserção. Executa a operação solicitada na base de dados.
+ || Regista a operação nos logs do sistema
+ || Apresenta uma mensagem de confirmação com base no tipo de operação pretendida.
+Restrições e Validações || Restrições e Validações
+O administrador deve estar autenticado no sistema; | Apenas os administradores têm de gerir as taxas de inflação, o período de referência (mês e anos), o valor da taxa de inflação deve ser numérico e não podem existir mais de uma taxa de inflação para o mesmo período;  | Actualização e exclusão só podem acontecer em taxas de inflação previamente registadas e as taxas devem corresponder aos dados oficiais (ex: INE Angola); | As alterações efectuadas devem estar imediatamente disponíveis para o cálculo de rentabilidade real e devem ser registadas nos logs do sistema; | O sistema deve garantir a integridade, consistência e confidencialidade dos dados armazenados; || O administrador deve estar autenticado no sistema; | Apenas os administradores têm de gerir as taxas de inflação, o período de referência (mês e anos), o valor da taxa de inflação deve ser numérico e não podem existir mais de uma taxa de inflação para o mesmo período;  | Actualização e exclusão só podem acontecer em taxas de inflação previamente registadas e as taxas devem corresponder aos dados oficiais (ex: INE Angola); | As alterações efectuadas devem estar imediatamente disponíveis para o cálculo de rentabilidade real e devem ser registadas nos logs do sistema; | O sistema deve garantir a integridade, consistência e confidencialidade dos dados armazenados;
+
+--- Tabela 11 ---
+Identificação || CSU – 009 Consultar Logs
+Caso de Uso Geral || Consultar Logs do sistema
+Actor principal || Administrador
+Descrição || O administrador consulta os logs realizados no sistema, possibilitando a monitorização das actividades efectuadas pelo utilizador e pelo próprio sistema para fins de auditoria e controlo.
+Pré-condições || O administrador tem de estar autenticado no sistema e devem existir registos de logs armazenados na base de dados do sistema.
+Pós-condições || Os registos armazenados são apresentados ao administrador, caso necessário, ele pode emitir um relatório administrativo.
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Acede ao menu “Consultar logs” no painel do administrador. || 
+ || Busca todos logs registados na base de dados.
+ || Apresenta os logs na interface do sistema com os seguintes dados:  | Tipos de Logs, período, utilizador e estados.
+Define os critérios de pesquisa (período, utilizador ou tipo de operação) || 
+ || Filtra os registos conforme os critérios estabelecidos, apresenta os resultados da consulta.
+Consulta os registos apresentados, podendo emitir os relatórios administrativos. || 
+ || Regista a operação de consulta nos logs do sistema.
+Restrições e Validações || Restrições e Validações
+O administrador deve estar autenticado no sistema e apenas os administradores podem consultar logs; | Os logs têm de ser apresentados em ordem cronológica, permitindo identificar a data e hora de cada operação;  | A consulta deve ter um período mínimo obrigatório (caso o administrador não seleccionar datas, o sistema assume os últimos 30 dias por defeitos;  | Os detalhes sensíveis (senhas), nunca são registados nos logs;  | O sistema deve permitir a pesquisa por utilizador, período e tipo de operação e deve garantir a integridade, a confidencialidade e consistência dos dados ou registos apresentados;  | Logs são apenas para consultas, não podendo ser alterados ou eliminados através desta funcionalidade;  | Todas operações realizadas devem ser armazenadas nos logs do sistema; || O administrador deve estar autenticado no sistema e apenas os administradores podem consultar logs; | Os logs têm de ser apresentados em ordem cronológica, permitindo identificar a data e hora de cada operação;  | A consulta deve ter um período mínimo obrigatório (caso o administrador não seleccionar datas, o sistema assume os últimos 30 dias por defeitos;  | Os detalhes sensíveis (senhas), nunca são registados nos logs;  | O sistema deve permitir a pesquisa por utilizador, período e tipo de operação e deve garantir a integridade, a confidencialidade e consistência dos dados ou registos apresentados;  | Logs são apenas para consultas, não podendo ser alterados ou eliminados através desta funcionalidade;  | Todas operações realizadas devem ser armazenadas nos logs do sistema;
+
+--- Tabela 12 ---
+Identificação || CSU – 010 Monitorar o Sistema
+Caso de Uso Geral || Monitorização do sistema
+Actor Principal || Administrador
+Descrição || O administrador monitora o estado actual do sistema, acompanhando os indicadores de funcionamento, utilização da plataforma e a disponibilidade dos serviços, garantindo o funcionamento correcto do simular de investimento
+Pré-condições || O administrador deve estar autenticado e sua conta deve estar activa.
+Pós-condições || As informações sobre o estado do sistema são apresentadas ao administrador, de modo a identificar eventuais anomalias e necessidade de intervenção.
+Fluxo Principal || Fluxo Principal
+Acções do Actor || Acções do Sistema
+Clica no menu “Monitorar o Sistema” || 
+ || Apresenta o painel de controlo de indicadores como: Estado do sistema, total de utilizador registado, utilizadores activos, total de simulações realizadas, última actualização de dados, dados em falta, total de carteiras fictícias criadas, estado da base de dados (activo e inactivo) e quantidade de taxas de inflação registadas.
+Consulta as informações apresentadas || 
+ || Actualiza os indicadores apresentados sempre que necessário
+ || Armazena as operações de monitorização no logs do sistema
+Restrições e Validações || Restrições e Validações
+O administrador deve estar autenticado no sistema e apenas os administradores podem monitorar o sistema; | As informações apresentadas devem representar o estado actual da aplicação ou sistema;  | O painel de monitorização deve ter um período de carregamento inferior a 3 segundos para não comprometer a usabilidade do sistema;  | Os indicadores de “Dados em falta” devem ser actualizados automaticamente quando administrador insere ou edita dados;  | O sistema deve apresentar apenas indicadores de monitorização, sem permitir alterações com base nessa funcionalidade;  | O sistema tem de garantir sempre a integridade, e confidencialidade das informações do sistema;  | Todas as operações de monitorização devem ser registadas no logs do sistema || O administrador deve estar autenticado no sistema e apenas os administradores podem monitorar o sistema; | As informações apresentadas devem representar o estado actual da aplicação ou sistema;  | O painel de monitorização deve ter um período de carregamento inferior a 3 segundos para não comprometer a usabilidade do sistema;  | Os indicadores de “Dados em falta” devem ser actualizados automaticamente quando administrador insere ou edita dados;  | O sistema deve apresentar apenas indicadores de monitorização, sem permitir alterações com base nessa funcionalidade;  | O sistema tem de garantir sempre a integridade, e confidencialidade das informações do sistema;  | Todas as operações de monitorização devem ser registadas no logs do sistema
+

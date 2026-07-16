@@ -1,0 +1,436 @@
+2026-04-20 21:59:34,430 INFO execução iniciada
+2026-04-20 21:59:35,454 INFO dados guardados com sucesso 
+2026-04-21 19:49:12,920 INFO execução iniciada
+2026-04-21 19:49:14,503 INFO dados guardados com sucesso 
+2026-04-22 22:52:55,366 INFO execução iniciada
+2026-04-22 22:52:56,735 INFO dados guardados com sucesso 
+2026-04-23 22:30:57,778 INFO execução iniciada
+2026-04-23 22:30:58,568 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 114, in <module>
+    conn = pymysql.connect(**MYSQL_CONFIG)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\connections.py", line 365, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\connections.py", line 681, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\connections.py", line 980, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\_auth.py", line 271, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2026-04-23 22:38:08,366 INFO execução iniciada
+2026-04-23 22:38:09,649 INFO dados guardados com sucesso 
+2026-04-24 23:08:10,957 INFO execução iniciada
+2026-04-24 23:08:12,493 INFO dados guardados com sucesso 
+2026-04-28 17:48:49,234 INFO execução iniciada
+2026-04-28 17:48:50,160 INFO dados guardados com sucesso 
+2026-04-29 21:59:42,370 INFO execução iniciada
+2026-04-29 21:59:43,115 INFO dados guardados com sucesso 
+2026-04-30 22:43:42,510 INFO execução iniciada
+2026-04-30 22:43:43,488 INFO dados guardados com sucesso 
+2026-05-05 15:44:36,787 INFO execução iniciada
+2026-05-05 15:44:37,626 INFO dados guardados com sucesso 
+2026-05-06 22:16:02,062 INFO execução iniciada
+2026-05-06 22:16:03,010 INFO dados guardados com sucesso 
+2026-05-07 23:50:33,542 INFO execução iniciada
+2026-05-07 23:50:34,529 INFO dados guardados com sucesso 
+2026-05-08 23:05:29,527 INFO execução iniciada
+2026-05-08 23:05:30,400 INFO dados guardados com sucesso 
+2026-05-11 16:15:53,396 INFO execução iniciada
+2026-05-11 16:15:54,565 INFO dados guardados com sucesso 
+2026-05-12 11:14:01,812 INFO execução iniciada
+2026-05-12 11:14:02,698 INFO dados guardados com sucesso 
+2026-05-13 10:59:37,531 INFO execução iniciada
+2026-05-13 10:59:38,599 INFO dados guardados com sucesso 
+2026-05-15 22:35:22,566 INFO execução iniciada
+2026-05-15 22:35:24,322 INFO dados guardados com sucesso 
+2026-05-19 16:04:17,744 INFO execução iniciada
+2026-05-19 16:04:19,421 INFO dados guardados com sucesso 
+2026-05-20 14:26:03,255 INFO execução iniciada
+2026-05-20 14:26:04,773 INFO dados guardados com sucesso 
+2026-05-25 15:46:38,491 INFO execução iniciada
+2026-05-25 15:46:40,125 INFO dados guardados com sucesso 
+2026-05-26 12:44:07,635 INFO execução iniciada
+2026-05-26 12:44:08,445 INFO dados guardados com sucesso 
+2026-05-28 10:08:09,498 INFO execução iniciada
+2026-05-28 10:08:10,340 INFO dados guardados com sucesso 
+2026-05-29 12:30:58,650 INFO execução iniciada
+2026-05-29 12:31:16,136 INFO dados guardados com sucesso 
+2026-06-01 12:43:07,584 INFO execução iniciada
+2026-06-01 12:43:08,470 INFO dados guardados com sucesso 
+2026-06-02 11:07:48,856 INFO execução iniciada
+2026-06-02 11:07:49,609 INFO dados guardados com sucesso 
+2026-06-03 15:49:58,854 INFO execução iniciada
+2026-06-03 15:49:59,613 INFO dados guardados com sucesso 
+2026-06-05 23:06:58,772 INFO execução iniciada
+2026-06-05 23:06:59,584 INFO dados guardados com sucesso 
+2026-06-08 16:15:25,274 INFO execução iniciada
+2026-06-08 16:15:27,459 INFO dados guardados com sucesso 
+2026-06-10 09:58:17,264 INFO execução iniciada
+2026-06-10 09:58:18,130 INFO dados guardados com sucesso 
+2026-06-11 10:19:24,934 INFO execução iniciada
+2026-06-11 10:19:25,714 INFO dados guardados com sucesso 
+2026-06-12 12:35:52,509 INFO execução iniciada
+2026-06-12 12:35:53,258 INFO dados guardados com sucesso 
+2026-06-15 11:29:51,155 INFO execução iniciada
+2026-06-15 11:29:52,758 INFO dados guardados com sucesso 
+2026-06-16 12:00:00,819 INFO execução iniciada
+2026-06-16 12:01:01,033 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 63, in <module>
+    raise Exception(f"Erro ao baixar o documento Excel:{r.status_code}")
+Exception: Erro ao baixar o documento Excel:504
+2026-06-16 12:01:42,324 INFO execução iniciada
+2026-06-16 12:02:16,387 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 60, in <module>
+    r = session.get(url, headers=headers, timeout=(60, 720), verify= False, stream=True)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 605, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 660, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-17 10:05:06,320 INFO execução iniciada
+2026-06-17 10:05:07,586 INFO dados guardados com sucesso 
+2026-06-18 12:12:46,127 INFO execução iniciada
+2026-06-18 12:12:46,930 INFO dados guardados com sucesso 
+2026-06-19 11:07:53,657 INFO execução iniciada
+2026-06-19 11:07:54,495 INFO dados guardados com sucesso 
+2026-06-22 10:10:27,680 INFO execução iniciada
+2026-06-22 10:10:33,346 INFO dados guardados com sucesso 
+2026-06-23 11:30:02,228 INFO execução iniciada
+2026-06-23 11:30:03,177 INFO dados guardados com sucesso 
+2026-06-24 22:26:49,103 INFO execução iniciada
+2026-06-24 22:27:15,297 INFO dados guardados com sucesso 
+2026-06-25 23:25:58,406 INFO execução iniciada
+2026-06-25 23:25:59,410 INFO dados guardados com sucesso 
+2026-06-26 11:21:58,362 INFO execução iniciada
+2026-06-26 11:22:00,134 INFO dados guardados com sucesso 
+2026-06-29 17:49:39,232 INFO execução iniciada
+2026-06-29 17:49:40,099 INFO dados guardados com sucesso 
+2026-06-30 11:44:00,489 INFO execução iniciada
+2026-06-30 11:45:00,772 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 63, in <module>
+    raise Exception(f"Erro ao baixar o documento Excel:{r.status_code}")
+Exception: Erro ao baixar o documento Excel:504
+2026-06-30 11:45:15,064 INFO execução iniciada
+2026-06-30 11:46:15,192 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 63, in <module>
+    raise Exception(f"Erro ao baixar o documento Excel:{r.status_code}")
+Exception: Erro ao baixar o documento Excel:504
+2026-06-30 14:03:13,995 INFO execução iniciada
+2026-06-30 14:03:15,371 INFO dados guardados com sucesso 
+2026-07-01 13:45:41,211 INFO execução iniciada
+2026-07-01 13:45:47,784 INFO dados guardados com sucesso 
+2026-07-06 14:09:01,216 INFO execução iniciada
+2026-07-06 14:09:01,580 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\ssl_.py", line 483, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\ssl_.py", line 527, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\ssl_.py", line 483, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\urllib3\util\ssl_.py", line 527, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Uma ligação existente foi forçada a fechar pelo anfitrião remoto', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 60, in <module>
+    r = session.get(url, headers=headers, timeout=(60, 720), verify= False, stream=True)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 605, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 660, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Uma ligação existente foi forçada a fechar pelo anfitrião remoto', None, 10054, None))
+2026-07-06 14:10:22,018 INFO execução iniciada
+2026-07-06 14:10:24,134 INFO dados guardados com sucesso 
+2026-07-07 13:26:37,755 INFO execução iniciada
+2026-07-07 13:27:37,982 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 63, in <module>
+    raise Exception(f"Erro ao baixar o documento Excel:{r.status_code}")
+Exception: Erro ao baixar o documento Excel:504
+2026-07-07 13:27:44,893 INFO execução iniciada
+2026-07-07 13:28:45,053 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 63, in <module>
+    raise Exception(f"Erro ao baixar o documento Excel:{r.status_code}")
+Exception: Erro ao baixar o documento Excel:504
+2026-07-07 14:13:12,219 INFO execução iniciada
+2026-07-07 14:14:12,342 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 63, in <module>
+    raise Exception(f"Erro ao baixar o documento Excel:{r.status_code}")
+Exception: Erro ao baixar o documento Excel:504
+2026-07-07 14:15:05,639 INFO execução iniciada
+2026-07-07 14:16:05,744 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 63, in <module>
+    raise Exception(f"Erro ao baixar o documento Excel:{r.status_code}")
+Exception: Erro ao baixar o documento Excel:504
+2026-07-07 20:10:04,367 INFO execução iniciada
+2026-07-07 20:10:05,573 INFO dados guardados com sucesso 
+2026-07-08 20:09:37,922 INFO execução iniciada
+2026-07-08 20:09:38,780 INFO dados guardados com sucesso 
+2026-07-09 17:45:40,246 INFO execução iniciada
+2026-07-09 17:45:41,469 INFO dados guardados com sucesso 
+2026-07-10 16:40:00,054 INFO execução iniciada
+2026-07-10 16:40:00,772 INFO dados guardados com sucesso 
+2026-07-13 16:16:12,844 INFO execução iniciada
+2026-07-13 16:16:14,252 INFO dados guardados com sucesso 
+2026-07-14 23:59:17,337 INFO execução iniciada
+2026-07-14 23:59:18,141 INFO dados guardados com sucesso 
+2026-07-15 18:47:51,356 INFO execução iniciada
+2026-07-15 18:47:51,561 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 76, in <module>
+    df = pd.read_excel(ficheiro_excel, skiprows=2, header=0 )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\io\excel\_base.py", line 481, in read_excel
+    io = ExcelFile(
+        io,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\io\excel\_base.py", line 1608, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+2026-07-15 18:48:36,591 INFO execução iniciada
+2026-07-15 18:48:36,752 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 76, in <module>
+    df = pd.read_excel(ficheiro_excel, skiprows=2, header=0 )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\io\excel\_base.py", line 481, in read_excel
+    io = ExcelFile(
+        io,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\io\excel\_base.py", line 1608, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+2026-07-15 18:49:47,424 INFO execução iniciada
+2026-07-15 18:49:47,558 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 76, in <module>
+    df = pd.read_excel(ficheiro_excel, skiprows=2, header=0 )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\io\excel\_base.py", line 481, in read_excel
+    io = ExcelFile(
+        io,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\io\excel\_base.py", line 1608, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+2026-07-15 18:52:08,546 INFO execução iniciada
+2026-07-15 18:52:08,668 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodiva.py", line 76, in <module>
+    df = pd.read_excel(ficheiro_excel, skiprows=2, header=0 )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\io\excel\_base.py", line 481, in read_excel
+    io = ExcelFile(
+        io,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\Raspagem\bodvenv\Lib\site-packages\pandas\io\excel\_base.py", line 1608, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
