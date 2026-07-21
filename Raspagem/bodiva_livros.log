@@ -538,3 +538,5 @@ requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected(
 2026-07-15 18:49:32,890 INFO Execução terminada. Dados com sucesso
 2026-07-17 12:07:09,784 INFO Execução  iniciada 
 2026-07-17 12:07:11,025 INFO Execução terminada. Dados com sucesso
+2026-07-21 11:45:31,222 INFO Execução  iniciada 
+2026-07-21 11:45:32,346 INFO Execução terminada. Dados com sucesso

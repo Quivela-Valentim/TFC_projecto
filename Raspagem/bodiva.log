@@ -436,3 +436,5 @@ Traceback (most recent call last):
 ValueError: Excel file format cannot be determined, you must specify an engine manually.
 2026-07-17 12:06:45,479 INFO execução iniciada
 2026-07-17 12:06:46,631 INFO dados guardados com sucesso 
+2026-07-21 11:45:16,981 INFO execução iniciada
+2026-07-21 11:45:17,952 INFO dados guardados com sucesso 
