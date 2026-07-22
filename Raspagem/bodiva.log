@@ -438,3 +438,83 @@ ValueError: Excel file format cannot be determined, you must specify an engine m
 2026-07-17 12:06:46,631 INFO dados guardados com sucesso 
 2026-07-21 11:45:16,981 INFO execução iniciada
 2026-07-21 11:45:17,952 INFO dados guardados com sucesso 
+2026-07-22 22:09:27,302 INFO execução iniciada
+2026-07-22 22:09:27,623 ERROR erro na execução
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\THINKPAD T490S\AppData\Local\Programs\Python\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodiva.py", line 60, in <module>
+    r = session.get(url, headers=headers, timeout=(60, 720), verify= False, stream=True)
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 605, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\THINKPAD T490S\Documents\TFC_projecto\Raspagem\bodvenv\Lib\site-packages\requests\adapters.py", line 660, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-22 22:10:02,714 INFO execução iniciada
+2026-07-22 22:10:03,538 INFO dados guardados com sucesso 
